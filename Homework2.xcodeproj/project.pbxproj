@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B41AA21857A00AF2458C60B /* Pods_Homework2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4594877DCB7C89FB2E542825 /* Pods_Homework2.framework */; };
 		B65794D1289A799300121193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65794D0289A799300121193 /* AppDelegate.swift */; };
 		B65794D3289A799300121193 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65794D2289A799300121193 /* SceneDelegate.swift */; };
 		B65794D5289A799300121193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65794D4289A799300121193 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4594877DCB7C89FB2E542825 /* Pods_Homework2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4937384E82ADA447E4C3B459 /* Pods-Homework2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework2.release.xcconfig"; path = "Target Support Files/Pods-Homework2/Pods-Homework2.release.xcconfig"; sourceTree = "<group>"; };
+		8908267E99476014AE10350F /* Pods-Homework2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework2.debug.xcconfig"; path = "Target Support Files/Pods-Homework2/Pods-Homework2.debug.xcconfig"; sourceTree = "<group>"; };
 		B65794CD289A799300121193 /* Homework2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65794D0289A799300121193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B65794D2289A799300121193 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B41AA21857A00AF2458C60B /* Pods_Homework2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				B65794CF289A799300121193 /* Homework2 */,
 				B65794CE289A799300121193 /* Products */,
+				C5F9D26E69C8C1B58F5E2B90 /* Pods */,
+				F774F3306BB7F22F469F8B15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = Homework2;
 			sourceTree = "<group>";
 		};
+		C5F9D26E69C8C1B58F5E2B90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8908267E99476014AE10350F /* Pods-Homework2.debug.xcconfig */,
+				4937384E82ADA447E4C3B459 /* Pods-Homework2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F774F3306BB7F22F469F8B15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4594877DCB7C89FB2E542825 /* Pods_Homework2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B65794E1289A799300121193 /* Build configuration list for PBXNativeTarget "Homework2" */;
 			buildPhases = (
+				5A31866278F15AE45783669A /* [CP] Check Pods Manifest.lock */,
 				B65794C9289A799300121193 /* Sources */,
 				B65794CA289A799300121193 /* Frameworks */,
 				B65794CB289A799300121193 /* Resources */,
+				2F55B5ABBB1F4CB124FC2F1F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F55B5ABBB1F4CB124FC2F1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Homework2/Pods-Homework2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Homework2/Pods-Homework2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Homework2/Pods-Homework2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A31866278F15AE45783669A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Homework2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B65794C9289A799300121193 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		B65794E2289A799300121193 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8908267E99476014AE10350F /* Pods-Homework2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		B65794E3289A799300121193 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4937384E82ADA447E4C3B459 /* Pods-Homework2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
