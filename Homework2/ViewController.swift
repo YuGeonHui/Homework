@@ -41,8 +41,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.isLogin = false
-        
         self.logInResult.text = nil
         self.logInResult.textColor = .red
         
@@ -55,51 +53,139 @@ class ViewController: UIViewController {
         self.logInButton.layer.cornerRadius = Metric.buttonRadius
         
         self.idInputField.delegate = self
+        self.pwInputField.isSecureTextEntry = true
         self.pwInputField.delegate = self
     }
     
     private var isValidId: Bool = false
     private var isValidPw: Bool = false
-    private var isLogin: Bool = false
+    private var isLogin: Bool {
+        return isValidId && isValidPw
+    }
     
     // MARK: - Action
     @IBAction func logInPress(_ sender: Any) {
         
-        self.logInButton.isEnabled = isLogin
-        
-        guard let id = self.idInputField.text, id.count > 0, let pw = self.pwInputField.text, pw.count > 0 else {
-            return
-        }
-        
-        if validId(id) && vaildPw(pw) {
+        if isLogin {
+            logInResult.textColor = .blue
             logInResult.text = "로그인에 성공했습니다."
+            
+        } else {
+            logInResult.text = "아이디와 비밀번호를 확인해주세요"
+            logInResult.textColor = .red
         }
+        
+        
+//        guard let id = self.idInputField.text, id.count > 0, let pw = self.pwInputField.text, pw.count > 0 else {
+//            return
+//        }
     }
     
     private func validId(_ id: String) -> Bool {
-        
-        // 아이디 검증로직
-        
-        return true
+        return (id.count > 10 || id.count == 0) ? true : false
     }
     
     private func vaildPw(_ pw: String) -> Bool {
-        
-        // 비밀번호 검증로직
-        
-        return true
+        return (pw.count > 10 || pw.count == 0) ? true : false
     }
 }
 
 // MARK: - Delegate
 extension ViewController: UITextFieldDelegate {
     
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//        <#code#>
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        
+        if textField == self.idInputField {
+            debugPrint("아이디 필드가 tapped")
+            
+        } else if textField == self.pwInputField {
+            debugPrint("비밀번호 필드가 tapped")
+            
+        }
+        
+        return true
+    }
+    
+//    func textFieldDidBeginEditing(_ textField: UITextField) {
+//        if textField == self.idInputField {
+//            debugPrint("아이디 필드 편집모드 실행")
+//
+//        } else if textField == self.pwInputField {
+//            debugPrint("비밀번호 필드가 편집모드 실행")
+//
+//        }
 //    }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        
+        self.logInResult.text = ""
+        
+        if textField == self.idInputField {
+            
+            self.isValidId = false
+            debugPrint("아이디 필드 초기화!")
+            
+        } else if textField == self.pwInputField {
+            
+            self.isValidPw = false
+            debugPrint("비밀번호 필드가 초기화!")
+            
+        }
+        
+        return true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField == self.idInputField {
+            debugPrint("아이디 필드 Return 키 입력!")
+            
+        } else if textField == self.pwInputField {
+            debugPrint("비밀번호 필드가 Return 키 입력!")
+            
+        }
+        
+        return true
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        logInResult.text = ""
+        
+        let currentText = NSString(string: textField.text ?? "")
+        let finalText = currentText.replacingCharacters(in: range, with: string)
+        
+        switch textField {
+        case idInputField:
+            
+            if validId(finalText) {
+            
+                self.isValidId = true
+                self.idResultLabel.text = ""
+
+            } else {
+                
+                self.isValidId = false
+                self.idResultLabel.text = "아이디 실패!"
+                
+            }
+            
+        case pwInputField:
+            
+            if vaildPw(finalText) {
+                
+                self.isValidPw = true
+                self.pwResultLabel.text = ""
+                
+            } else {
+                
+                self.isValidPw = false
+                self.pwResultLabel.text = "비밀번호 실패"
+            }
+            
+        default: break
+        }
+        
+        return true
+    }
 }
-
-
-// MARK: - ToDo List
-// 1. 비밀번호 secure 처리
-// 2. Dele
