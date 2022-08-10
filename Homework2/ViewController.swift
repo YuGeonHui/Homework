@@ -27,19 +27,23 @@ class ViewController: UIViewController {
         static var idError: String {
             return "아이디를 확인해주세요."
         }
-        
+    
         static var pwError: String {
             return "비밀번호를 확인해주세요."
         }
         
-        static var result: String {
+        static var resultSucess: String {
             return "로그인이 성공했습니다!!"
         }
+        
+        static var resultError: String {
+            return "아이디와 비밀번호를 확인해주세요"
+        }
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         self.logInResult.text = nil
         self.logInResult.textColor = .red
@@ -52,7 +56,8 @@ class ViewController: UIViewController {
         
         self.logInButton.layer.cornerRadius = Metric.buttonRadius
         
-        self.idInputField.delegate = self
+        self.idInputField.delegate =
+        self
         self.pwInputField.isSecureTextEntry = true
         self.pwInputField.delegate = self
     }
@@ -65,20 +70,22 @@ class ViewController: UIViewController {
     
     // MARK: - Action
     @IBAction func logInPress(_ sender: Any) {
-        
+    
         if isLogin {
             logInResult.textColor = .blue
-            logInResult.text = "로그인에 성공했습니다."
+            logInResult.text = Text.resultSucess
             
         } else {
-            logInResult.text = "아이디와 비밀번호를 확인해주세요"
+            
+            logInResult.text = Text.resultError
             logInResult.textColor = .red
         }
         
-        
-//        guard let id = self.idInputField.text, id.count > 0, let pw = self.pwInputField.text, pw.count > 0 else {
-//            return
-//        }
+        guard let id = self.idInputField.text, id.count > 0, let pw = self.pwInputField.text, pw.count > 0 else {
+            
+//            self.logInResult.text = ""
+            return
+        }
     }
     
     private func validId(_ id: String) -> Bool {
@@ -95,12 +102,11 @@ extension ViewController: UITextFieldDelegate {
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         
-        if textField == self.idInputField {
+        if textField == idInputField {
             debugPrint("아이디 필드가 tapped")
             
-        } else if textField == self.pwInputField {
+        } else if textField == pwInputField {
             debugPrint("비밀번호 필드가 tapped")
-            
         }
         
         return true
@@ -120,14 +126,14 @@ extension ViewController: UITextFieldDelegate {
         
         self.logInResult.text = ""
         
-        if textField == self.idInputField {
+        if textField == idInputField {
             
-            self.isValidId = false
+            isValidId = false
             debugPrint("아이디 필드 초기화!")
             
-        } else if textField == self.pwInputField {
+        } else if textField == pwInputField {
             
-            self.isValidPw = false
+            isValidPw = false
             debugPrint("비밀번호 필드가 초기화!")
             
         }
@@ -135,18 +141,18 @@ extension ViewController: UITextFieldDelegate {
         return true
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
-        if textField == self.idInputField {
-            debugPrint("아이디 필드 Return 키 입력!")
-            
-        } else if textField == self.pwInputField {
-            debugPrint("비밀번호 필드가 Return 키 입력!")
-            
-        }
-        
-        return true
-    }
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//
+//        if textField == self.idInputField {
+//            debugPrint("아이디 필드 Return 키 입력!")
+//
+//        } else if textField == self.pwInputField {
+//            debugPrint("비밀번호 필드가 Return 키 입력!")
+//
+//        }
+//
+//        return true
+//    }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
@@ -160,27 +166,26 @@ extension ViewController: UITextFieldDelegate {
             
             if validId(finalText) {
             
-                self.isValidId = true
-                self.idResultLabel.text = ""
+                isValidId = true
+                idResultLabel.text = ""
 
             } else {
                 
-                self.isValidId = false
-                self.idResultLabel.text = "아이디 실패!"
-                
+                isValidId = false
+                idResultLabel.text = Text.idError
             }
             
         case pwInputField:
             
             if vaildPw(finalText) {
                 
-                self.isValidPw = true
-                self.pwResultLabel.text = ""
+                isValidPw = true
+                pwResultLabel.text = ""
                 
             } else {
                 
-                self.isValidPw = false
-                self.pwResultLabel.text = "비밀번호 실패"
+                isValidPw = false
+                pwResultLabel.text = Text.pwError
             }
             
         default: break
