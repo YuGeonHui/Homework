@@ -8,7 +8,6 @@
 import UIKit
 
 // TODO: UserDefault 추가
-// TODO: UIView 개념 추가
 class Homework3ViewController: UIViewController {
     
     @IBOutlet weak var onOffSwitch: UISwitch!
@@ -20,6 +19,11 @@ class Homework3ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UserDefaults.standard.removeObject(forKey: selectNumberKey)
+        
+        
+        print(UserDefaults.standard.dictionaryWithValues(forKeys: [selectNumberKey]))
     }
     
     @IBAction func stateChange(_ sender: Any) {
@@ -32,7 +36,6 @@ class Homework3ViewController: UIViewController {
         
         let alert = UIAlertController(title: "Your Title", message: "Your Message", preferredStyle: UIAlertController.Style.alert)
         let defaultVale = UIAlertAction(title: "default", style: .default) { _ in
-//            self.alertResult.text = "Ok Action Handler"
             self.view.backgroundColor = .blue
         }
         let destructiveValue = UIAlertAction(title: "destructive", style: .destructive) { _ in
@@ -41,10 +44,6 @@ class Homework3ViewController: UIViewController {
         let cancelValue = UIAlertAction(title: "cancel", style: .cancel) { _ in
             self.view.backgroundColor = .systemBackground
         }
-        
-//        let value = UIAlertAction(title: "", style: .default) {
-//
-//        }
         
         alert.addAction(defaultVale)
         alert.addAction(destructiveValue)
@@ -61,13 +60,10 @@ class Homework3ViewController: UIViewController {
         var numberAction = UIAlertAction()
         
         for value in 0..<valueTitle.count {
+            
             numberAction = UIAlertAction(title: valueTitle[value], style: .default)
             
-            UserDefaults.standard.set(valueTitle[value], forKey: selectNumberKey)
             alert.addAction(numberAction)
-            
-            
-            self.alertResult.text = UserDefaults.standard.string(forKey: selectNumberKey) ?? "Not Choice Number"
         }
         
 //        let okAction = UIAlertAction(title: "OK", style: .cancel, handler : nil)

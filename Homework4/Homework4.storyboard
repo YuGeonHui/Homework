@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Work4 View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeWork4ViewController" id="Y6W-OH-hqX" customClass="HomeWork4ViewController" customModule="Homework2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="O1B-Cm-tDe">
+                                <rect key="frame" x="20" y="84" width="374" height="242.5"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Z9-1Q-wMX">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                        <segments>
+                                            <segment title="동쪽"/>
+                                            <segment title="서쪽"/>
+                                            <segment title="남쪽"/>
+                                            <segment title="북쪽"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="selectedNumber:" destination="Y6W-OH-hqX" eventType="valueChanged" id="Zz2-jh-tGe"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="값이 저장되어 있지 않습니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfF-bR-0xS">
+                                        <rect key="frame" x="0.0" y="111" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6C-qx-yrV">
+                                        <rect key="frame" x="0.0" y="211.5" width="374" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="선택 된 값 저장"/>
+                                        <connections>
+                                            <action selector="save:" destination="UUU-qy-nSi" eventType="touchUpInside" id="IL8-XY-BVa"/>
+                                            <action selector="save:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cgC-cn-fao"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="TxF-0R-Emi">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O1B-Cm-tDe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="5cw-Hq-b3N"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="O1B-Cm-tDe" secondAttribute="trailing" constant="20" id="82G-7A-vO6"/>
+                            <constraint firstItem="TxF-0R-Emi" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Gwi-7V-4TP"/>
+                            <constraint firstItem="TxF-0R-Emi" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="axY-mR-3Dp"/>
+                            <constraint firstItem="O1B-Cm-tDe" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="eEo-Dx-oUU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicator" destination="TxF-0R-Emi" id="dWb-NY-nUl"/>
+                        <outlet property="numberSegment" destination="5Z9-1Q-wMX" id="7fN-1O-w1P"/>
+                        <outlet property="resultLabel" destination="GfF-bR-0xS" id="DHA-W8-AsI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="UUU-qy-nSi" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
