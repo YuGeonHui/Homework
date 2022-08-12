@@ -10,11 +10,13 @@ import UIKit
 class HomeWork4ViewController: UIViewController {
     
     @IBOutlet weak var indicator: UIActivityIndicatorView!
-    @IBOutlet weak var numberSegment: UISegmentedControl!
+    @IBOutlet weak var directionSegment: UISegmentedControl!
     @IBOutlet weak var resultLabel: UILabel!
     
-    private var key = "numberKey"
     private let direction: Direction = Direction()
+    
+    private var directionKey = "directionKey"
+    private var numberKey = "nubmerKey"
     
     private enum Const {
         static var darkAlpha: CGFloat = 0.5
@@ -72,7 +74,9 @@ class HomeWork4ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.resultLabel.text = UserDefaults.standard.string(forKey: key) ?? "값을 선택해 주세요."
+        self.resultLabel.text = UserDefaults.standard.string(forKey: directionKey) ?? "값을 선택해 주세요."
+        self.directionSegment.selectedSegmentIndex = UserDefaults.standard.integer(forKey: numberKey)
+        
         self.indicator.hidesWhenStopped = true // 처음에 안보이게 해주기 위해서
     }
     
@@ -81,12 +85,16 @@ class HomeWork4ViewController: UIViewController {
         switch sender.selectedSegmentIndex {
         case 0:
             resultLabel.text = direction.east
+            UserDefaults.standard.set(0, forKey: numberKey)
         case 1:
             resultLabel.text = direction.west
+            UserDefaults.standard.set(1, forKey: numberKey)
         case 2:
             resultLabel.text = direction.south
+            UserDefaults.standard.set(2, forKey: numberKey)
         case 3:
             resultLabel.text =  direction.north
+            UserDefaults.standard.set(3, forKey: numberKey)
         default: break
         }
     }
@@ -138,7 +146,7 @@ extension HomeWork4ViewController {
         self.startAnimation()
         
         guard let text = resultLabel.text, text.count > 0 else { return }
-        UserDefaults.standard.set(text, forKey: key)
+        UserDefaults.standard.set(text, forKey: directionKey)
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
             self.stopAnimation()

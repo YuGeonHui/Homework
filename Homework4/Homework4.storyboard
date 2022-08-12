@@ -63,8 +63,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="directionSegment" destination="5Z9-1Q-wMX" id="7fN-1O-w1P"/>
                         <outlet property="indicator" destination="TxF-0R-Emi" id="dWb-NY-nUl"/>
-                        <outlet property="numberSegment" destination="5Z9-1Q-wMX" id="7fN-1O-w1P"/>
                         <outlet property="resultLabel" destination="GfF-bR-0xS" id="DHA-W8-AsI"/>
                     </connections>
                 </viewController>
