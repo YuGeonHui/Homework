@@ -20,8 +20,8 @@ class StockRankCollectionViewCell: UICollectionViewCell {
         rankLabel.text = "\(stock.rank)"
         companyIconImageView.image = UIImage(named: stock.imageName)
         companyNameLabel.text = stock.name
-        companyPriceLabel.text = "\(convertToCurrencyFormat(price: stock.price)) 원"
-        
+//        companyPriceLabel.text = "\(convertToCurrencyFormat(price: stock.price)) 원"
+        companyPriceLabel.text = "\(stock.price) 원"
         diffLabel.text = "\(stock.diff)%"
         diffLabel.textColor = stock.diff > 0 ? .systemRed : .systemBlue
     }

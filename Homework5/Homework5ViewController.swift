@@ -13,11 +13,6 @@ class Homework5ViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    // Data, Presentation, Layout
-    // Data : 어떤 데이터를 쓸거야
-    // Presentation : 셀을 어떻게 표현할꺼야?
-    // Layout : 셀을 어떻게 배치할 거야 ??
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,11 +43,6 @@ extension Homework5ViewController: UICollectionViewDataSource {
 extension Homework5ViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        // width == collectionView, height == 80
         return CGSize(width: collectionView.bounds.width, height: 80)
     }
 }
-
-// TODO: Bounds, CGPoint, CGFloat, CGSize, AutoLayout
-// TODO: Casting, Guard
