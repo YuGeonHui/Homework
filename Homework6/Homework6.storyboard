@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="b9Z-Bu-Oay">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChatListCollectionViewCell" id="b9Z-Bu-Oay" customClass="ChatListCollectionViewCell" customModule="Homework2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WqA-WR-s0u">
@@ -73,6 +73,12 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="128"/>
+                                        <connections>
+                                            <outlet property="chatLabel" destination="tbB-a8-wGE" id="juz-Wu-AiK"/>
+                                            <outlet property="dataLabel" destination="uMu-9p-tqP" id="gbv-Ab-zlR"/>
+                                            <outlet property="nameLabel" destination="ITx-Da-wYu" id="rja-mB-ANu"/>
+                                            <outlet property="thumbnailImageView" destination="bk0-Nw-R4A" id="OZ0-5j-rJs"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -86,6 +92,9 @@
                             <constraint firstItem="Rxb-lp-Igq" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="yod-nd-3zG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Rxb-lp-Igq" id="e7B-TJ-ZJe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
