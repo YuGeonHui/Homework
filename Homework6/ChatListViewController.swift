@@ -11,7 +11,7 @@ class ChatListViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let chatList: [ChatModel] = ChatModel.list
+    var chatList: [Chat] = Chat.list
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,10 @@ class ChatListViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
+        
+        chatList = chatList.sorted(by: { chat1, chat2 in
+            return chat1.date > chat2.date
+        })
     }
 }
 
@@ -34,6 +38,8 @@ extension ChatListViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         
+        let chat = chatList[indexPath.item]
+        cell.configure(chat)
         return cell
     }
 }

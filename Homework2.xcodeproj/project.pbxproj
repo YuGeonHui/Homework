@@ -19,7 +19,7 @@
 		B661B64928B79BAF004EFE56 /* ChatListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661B64828B79BAF004EFE56 /* ChatListCollectionViewCell.swift */; };
 		B661B64D28B79BDD004EFE56 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661B64C28B79BDD004EFE56 /* ChatListViewController.swift */; };
 		B661B64F28B79BF5004EFE56 /* Homework6.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B661B64E28B79BF5004EFE56 /* Homework6.storyboard */; };
-		B661B65128B79CDD004EFE56 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661B65028B79CDD004EFE56 /* ChatModel.swift */; };
+		B661B65128B79CDD004EFE56 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661B65028B79CDD004EFE56 /* Chat.swift */; };
 		B680909828A8C925002F694F /* Homework5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680909728A8C925002F694F /* Homework5ViewController.swift */; };
 		B680909A28A8C92D002F694F /* Homework5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B680909928A8C92D002F694F /* Homework5.storyboard */; };
 		B68ED80C28A6028500F1B064 /* Homework4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68ED80B28A6028500F1B064 /* Homework4.storyboard */; };
@@ -45,7 +45,7 @@
 		B661B64828B79BAF004EFE56 /* ChatListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCollectionViewCell.swift; sourceTree = "<group>"; };
 		B661B64C28B79BDD004EFE56 /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
 		B661B64E28B79BF5004EFE56 /* Homework6.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homework6.storyboard; sourceTree = "<group>"; };
-		B661B65028B79CDD004EFE56 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		B661B65028B79CDD004EFE56 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		B680909728A8C925002F694F /* Homework5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework5ViewController.swift; sourceTree = "<group>"; };
 		B680909928A8C92D002F694F /* Homework5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homework5.storyboard; sourceTree = "<group>"; };
 		B68ED80B28A6028500F1B064 /* Homework4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homework4.storyboard; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 			children = (
 				B661B64828B79BAF004EFE56 /* ChatListCollectionViewCell.swift */,
 				B661B64C28B79BDD004EFE56 /* ChatListViewController.swift */,
-				B661B65028B79CDD004EFE56 /* ChatModel.swift */,
+				B661B65028B79CDD004EFE56 /* Chat.swift */,
 				B661B64E28B79BF5004EFE56 /* Homework6.storyboard */,
 			);
 			path = Homework6;
@@ -286,7 +286,7 @@
 				B68ED80E28A6029300F1B064 /* HomeWork4ViewController.swift in Sources */,
 				B661B64928B79BAF004EFE56 /* ChatListCollectionViewCell.swift in Sources */,
 				B65794D1289A799300121193 /* AppDelegate.swift in Sources */,
-				B661B65128B79CDD004EFE56 /* ChatModel.swift in Sources */,
+				B661B65128B79CDD004EFE56 /* Chat.swift in Sources */,
 				B613847E28A3C94F0001BABA /* Homework3ViewController.swift in Sources */,
 				B65794D3289A799300121193 /* SceneDelegate.swift in Sources */,
 			);
