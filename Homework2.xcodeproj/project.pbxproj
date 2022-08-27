@@ -10,6 +10,9 @@
 		7B41AA21857A00AF2458C60B /* Pods_Homework2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4594877DCB7C89FB2E542825 /* Pods_Homework2.framework */; };
 		B613847C28A3C93E0001BABA /* Homework3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B613847B28A3C93E0001BABA /* Homework3.storyboard */; };
 		B613847E28A3C94F0001BABA /* Homework3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613847D28A3C94F0001BABA /* Homework3ViewController.swift */; };
+		B63564BC28B9D6CE001108BF /* FrameworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BB28B9D6CE001108BF /* FrameworkModel.swift */; };
+		B63564BE28B9D75C001108BF /* AppleFrameworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BD28B9D75C001108BF /* AppleFrameworkViewController.swift */; };
+		B63564C028B9D885001108BF /* AppleFrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BF28B9D885001108BF /* AppleFrameworkCell.swift */; };
 		B65794D1289A799300121193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65794D0289A799300121193 /* AppDelegate.swift */; };
 		B65794D3289A799300121193 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65794D2289A799300121193 /* SceneDelegate.swift */; };
 		B65794D5289A799300121193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65794D4289A799300121193 /* ViewController.swift */; };
@@ -34,6 +37,9 @@
 		8908267E99476014AE10350F /* Pods-Homework2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework2.debug.xcconfig"; path = "Target Support Files/Pods-Homework2/Pods-Homework2.debug.xcconfig"; sourceTree = "<group>"; };
 		B613847B28A3C93E0001BABA /* Homework3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homework3.storyboard; sourceTree = "<group>"; };
 		B613847D28A3C94F0001BABA /* Homework3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework3ViewController.swift; sourceTree = "<group>"; };
+		B63564BB28B9D6CE001108BF /* FrameworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkModel.swift; sourceTree = "<group>"; };
+		B63564BD28B9D75C001108BF /* AppleFrameworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkViewController.swift; sourceTree = "<group>"; };
+		B63564BF28B9D885001108BF /* AppleFrameworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkCell.swift; sourceTree = "<group>"; };
 		B65794CD289A799300121193 /* Homework2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65794D0289A799300121193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B65794D2289A799300121193 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,9 +81,20 @@
 			path = Homework3;
 			sourceTree = "<group>";
 		};
+		B63564BA28B9D6A6001108BF /* Homework7 */ = {
+			isa = PBXGroup;
+			children = (
+				B63564BB28B9D6CE001108BF /* FrameworkModel.swift */,
+				B63564BD28B9D75C001108BF /* AppleFrameworkViewController.swift */,
+				B63564BF28B9D885001108BF /* AppleFrameworkCell.swift */,
+			);
+			path = Homework7;
+			sourceTree = "<group>";
+		};
 		B65794C4289A799300121193 = {
 			isa = PBXGroup;
 			children = (
+				B63564BA28B9D6A6001108BF /* Homework7 */,
 				B661B64728B79B8A004EFE56 /* Homework6 */,
 				B680909628A8C913002F694F /* Homework5 */,
 				B68ED80A28A6026900F1B064 /* Homework4 */,
@@ -280,12 +297,15 @@
 			files = (
 				B680909828A8C925002F694F /* Homework5ViewController.swift in Sources */,
 				B6A8F0DA28A8D4810065F4BA /* StockRankCollectionViewCell.swift in Sources */,
+				B63564BC28B9D6CE001108BF /* FrameworkModel.swift in Sources */,
 				B65794D5289A799300121193 /* ViewController.swift in Sources */,
 				B6A8F0D828A8CC0D0065F4BA /* StockModel.swift in Sources */,
 				B661B64D28B79BDD004EFE56 /* ChatListViewController.swift in Sources */,
 				B68ED80E28A6029300F1B064 /* HomeWork4ViewController.swift in Sources */,
+				B63564C028B9D885001108BF /* AppleFrameworkCell.swift in Sources */,
 				B661B64928B79BAF004EFE56 /* ChatListCollectionViewCell.swift in Sources */,
 				B65794D1289A799300121193 /* AppDelegate.swift in Sources */,
+				B63564BE28B9D75C001108BF /* AppleFrameworkViewController.swift in Sources */,
 				B661B65128B79CDD004EFE56 /* Chat.swift in Sources */,
 				B613847E28A3C94F0001BABA /* Homework3ViewController.swift in Sources */,
 				B65794D3289A799300121193 /* SceneDelegate.swift in Sources */,
