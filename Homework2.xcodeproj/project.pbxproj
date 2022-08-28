@@ -19,6 +19,9 @@
 		B65794D8289A799300121193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65794D6289A799300121193 /* Main.storyboard */; };
 		B65794DA289A799300121193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65794D9289A799300121193 /* Assets.xcassets */; };
 		B65794DD289A799300121193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65794DB289A799300121193 /* LaunchScreen.storyboard */; };
+		B65FA37B28BB3A1800C9DAB7 /* HeadSpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65FA37A28BB3A1800C9DAB7 /* HeadSpaceViewController.swift */; };
+		B65FA37D28BB3A2000C9DAB7 /* Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65FA37C28BB3A2000C9DAB7 /* Focus.swift */; };
+		B65FA37F28BB3AC600C9DAB7 /* HeadSpaceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65FA37E28BB3AC600C9DAB7 /* HeadSpaceCollectionViewCell.swift */; };
 		B661B64928B79BAF004EFE56 /* ChatListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661B64828B79BAF004EFE56 /* ChatListCollectionViewCell.swift */; };
 		B661B64D28B79BDD004EFE56 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661B64C28B79BDD004EFE56 /* ChatListViewController.swift */; };
 		B661B64F28B79BF5004EFE56 /* Homework6.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B661B64E28B79BF5004EFE56 /* Homework6.storyboard */; };
@@ -48,6 +51,9 @@
 		B65794D9289A799300121193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B65794DC289A799300121193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B65794DE289A799300121193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B65FA37A28BB3A1800C9DAB7 /* HeadSpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadSpaceViewController.swift; sourceTree = "<group>"; };
+		B65FA37C28BB3A2000C9DAB7 /* Focus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus.swift; sourceTree = "<group>"; };
+		B65FA37E28BB3AC600C9DAB7 /* HeadSpaceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadSpaceCollectionViewCell.swift; sourceTree = "<group>"; };
 		B661B64828B79BAF004EFE56 /* ChatListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCollectionViewCell.swift; sourceTree = "<group>"; };
 		B661B64C28B79BDD004EFE56 /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
 		B661B64E28B79BF5004EFE56 /* Homework6.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homework6.storyboard; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 		B65794C4289A799300121193 = {
 			isa = PBXGroup;
 			children = (
+				B65FA37928BB3A0000C9DAB7 /* Homework8 */,
 				B63564BA28B9D6A6001108BF /* Homework7 */,
 				B661B64728B79B8A004EFE56 /* Homework6 */,
 				B680909628A8C913002F694F /* Homework5 */,
@@ -126,6 +133,16 @@
 				B65794DE289A799300121193 /* Info.plist */,
 			);
 			path = Homework2;
+			sourceTree = "<group>";
+		};
+		B65FA37928BB3A0000C9DAB7 /* Homework8 */ = {
+			isa = PBXGroup;
+			children = (
+				B65FA37A28BB3A1800C9DAB7 /* HeadSpaceViewController.swift */,
+				B65FA37C28BB3A2000C9DAB7 /* Focus.swift */,
+				B65FA37E28BB3AC600C9DAB7 /* HeadSpaceCollectionViewCell.swift */,
+			);
+			path = Homework8;
 			sourceTree = "<group>";
 		};
 		B661B64728B79B8A004EFE56 /* Homework6 */ = {
@@ -301,7 +318,9 @@
 				B65794D5289A799300121193 /* ViewController.swift in Sources */,
 				B6A8F0D828A8CC0D0065F4BA /* StockModel.swift in Sources */,
 				B661B64D28B79BDD004EFE56 /* ChatListViewController.swift in Sources */,
+				B65FA37D28BB3A2000C9DAB7 /* Focus.swift in Sources */,
 				B68ED80E28A6029300F1B064 /* HomeWork4ViewController.swift in Sources */,
+				B65FA37B28BB3A1800C9DAB7 /* HeadSpaceViewController.swift in Sources */,
 				B63564C028B9D885001108BF /* AppleFrameworkCell.swift in Sources */,
 				B661B64928B79BAF004EFE56 /* ChatListCollectionViewCell.swift in Sources */,
 				B65794D1289A799300121193 /* AppDelegate.swift in Sources */,
@@ -309,6 +328,7 @@
 				B661B65128B79CDD004EFE56 /* Chat.swift in Sources */,
 				B613847E28A3C94F0001BABA /* Homework3ViewController.swift in Sources */,
 				B65794D3289A799300121193 /* SceneDelegate.swift in Sources */,
+				B65FA37F28BB3AC600C9DAB7 /* HeadSpaceCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
