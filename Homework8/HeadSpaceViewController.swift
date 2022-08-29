@@ -10,6 +10,9 @@ import UIKit
 class HeadSpaceViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var refreshButton: UIButton!
+    
+    var curated: Bool = false
     
     var items: [Focus] = Focus.list
     enum Section {
@@ -27,10 +30,10 @@ class HeadSpaceViewController: UIViewController {
             
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeadSpaceCollectionViewCell", for: indexPath) as? HeadSpaceCollectionViewCell else { return nil }
             
-            let data = self.items[indexPath.row]
-            cell.configure(data)
+//            let data = self.items[indexPath.row]
+//            cell.configure(data)
             
-//            cell.configure(item)
+            cell.configure(item)
             return cell
         })
         
@@ -42,6 +45,13 @@ class HeadSpaceViewController: UIViewController {
         
         // layout
         collectionView.collectionViewLayout = layout()
+        refreshButton.layer.cornerRadius = 10
+    }
+    
+    private func updateButtonTitle() {
+        
+        let title = curated ? "See All" : "See Recomendation"
+        refreshButton.setTitle(title, for: .normal)
     }
     
     private func layout() -> UICollectionViewCompositionalLayout {
@@ -58,5 +68,19 @@ class HeadSpaceViewController: UIViewController {
         
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
+    }
+    
+    @IBAction func refreshButtonTapped(_ sender: Any) {
+     
+        curated.toggle()
+        
+        self.items = curated ? Focus.recommendations : Focus.list
+        
+        var snapShot = NSDiffableDataSourceSnapshot<Section, Item>()
+        snapShot.appendSections([.main])
+        snapShot.appendItems(items, toSection: .main)
+        dataSource.apply(snapShot)
+        
+        self.updateButtonTitle()
     }
 }
