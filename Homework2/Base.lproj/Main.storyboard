@@ -190,6 +190,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Hpk-By-ngp" kind="show" id="xTo-8r-YkK"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -220,6 +223,89 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gRZ-zf-ufN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4387" y="-283"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="b9V-Xb-kpN">
+            <objects>
+                <viewController id="Hpk-By-ngp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fOZ-yE-cFA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spotify Premium 멤버가 되어보세요. 3개월간 무료로 이용하세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVd-4a-Qt1">
+                                <rect key="frame" x="30" y="138" width="354" height="93.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VPo-DU-H6R">
+                                <rect key="frame" x="0.0" y="251.5" width="414" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="vpf-Dj-eo6"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IPc-1J-ovG">
+                                    <size key="itemSize" width="364" height="174"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="orG-KW-6Ot">
+                                        <rect key="frame" x="25" y="0.0" width="364" height="174"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zSb-cT-xwo">
+                                            <rect key="frame" x="0.0" y="0.0" width="364" height="174"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="364" height="174"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZL-1g-mQ6">
+                                <rect key="frame" x="117" y="497.5" width="180" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="SDy-mU-8Cm"/>
+                                    <constraint firstAttribute="height" constant="50" id="pND-MH-TZX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="3개월 무료 이용하기" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_spotify" translatesAutoresizingMaskIntoConstraints="NO" id="dd2-yz-4m7">
+                                <rect key="frame" x="87" y="589" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="8or-FK-EUP">
+                                <rect key="frame" x="149" y="461.5" width="116" height="26"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ch3-dW-vdF"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ch3-dW-vdF" firstAttribute="trailing" secondItem="VPo-DU-H6R" secondAttribute="trailing" id="13V-ON-XI7"/>
+                            <constraint firstItem="iVd-4a-Qt1" firstAttribute="centerX" secondItem="ch3-dW-vdF" secondAttribute="centerX" id="81g-yR-8Gi"/>
+                            <constraint firstItem="VPo-DU-H6R" firstAttribute="top" secondItem="iVd-4a-Qt1" secondAttribute="bottom" constant="20" id="BpZ-Fb-Dmd"/>
+                            <constraint firstItem="AZL-1g-mQ6" firstAttribute="top" secondItem="8or-FK-EUP" secondAttribute="bottom" constant="10" id="EgS-gs-dL5"/>
+                            <constraint firstItem="8or-FK-EUP" firstAttribute="top" secondItem="VPo-DU-H6R" secondAttribute="bottom" constant="10" id="OmE-gd-GFK"/>
+                            <constraint firstItem="iVd-4a-Qt1" firstAttribute="top" secondItem="ch3-dW-vdF" secondAttribute="top" constant="50" id="Pjc-ab-A1I"/>
+                            <constraint firstItem="iVd-4a-Qt1" firstAttribute="leading" secondItem="ch3-dW-vdF" secondAttribute="leading" constant="30" id="cMT-6Z-e1i"/>
+                            <constraint firstItem="AZL-1g-mQ6" firstAttribute="centerX" secondItem="ch3-dW-vdF" secondAttribute="centerX" id="cVh-hZ-FGL"/>
+                            <constraint firstItem="VPo-DU-H6R" firstAttribute="leading" secondItem="ch3-dW-vdF" secondAttribute="leading" id="sSu-Y4-h3x"/>
+                            <constraint firstItem="8or-FK-EUP" firstAttribute="centerX" secondItem="ch3-dW-vdF" secondAttribute="centerX" id="vKG-Cv-tQf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qD2-mc-jYT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XKp-9w-w64" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3481.1594202898555" y="392.41071428571428"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XD9-P9-oPN">
@@ -412,6 +498,7 @@
     </scenes>
     <resources>
         <image name="cloud.heavyrain" catalog="system" width="125" height="128"/>
+        <image name="img_spotify" width="787.33331298828125" height="236.33332824707031"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
