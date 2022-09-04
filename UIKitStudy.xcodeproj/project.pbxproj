@@ -34,6 +34,7 @@
 		B6C8834728C22AA4003EAC2D /* SpotifyViewCoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8834628C22AA4003EAC2D /* SpotifyViewCoViewController.swift */; };
 		B6C8834928C22D6F003EAC2D /* SpotifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8834828C22D6F003EAC2D /* SpotifyModel.swift */; };
 		B6C8834B28C43379003EAC2D /* BannerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8834A28C43379003EAC2D /* BannerInfo.swift */; };
+		B6C8834D28C438D3003EAC2D /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8834C28C438D3003EAC2D /* BannerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		B6C8834628C22AA4003EAC2D /* SpotifyViewCoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyViewCoViewController.swift; sourceTree = "<group>"; };
 		B6C8834828C22D6F003EAC2D /* SpotifyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyModel.swift; sourceTree = "<group>"; };
 		B6C8834A28C43379003EAC2D /* BannerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerInfo.swift; sourceTree = "<group>"; };
+		B6C8834C28C438D3003EAC2D /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				B6C8834628C22AA4003EAC2D /* SpotifyViewCoViewController.swift */,
 				B6C8834828C22D6F003EAC2D /* SpotifyModel.swift */,
 				B6C8834A28C43379003EAC2D /* BannerInfo.swift */,
+				B6C8834C28C438D3003EAC2D /* BannerCell.swift */,
 			);
 			path = Spotify;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				B6C8834728C22AA4003EAC2D /* SpotifyViewCoViewController.swift in Sources */,
 				B661B64928B79BAF004EFE56 /* ChatListCollectionViewCell.swift in Sources */,
 				B65794D1289A799300121193 /* AppDelegate.swift in Sources */,
+				B6C8834D28C438D3003EAC2D /* BannerCell.swift in Sources */,
 				B63564BE28B9D75C001108BF /* AppleFrameworkViewController.swift in Sources */,
 				B661B65128B79CDD004EFE56 /* Chat.swift in Sources */,
 				B613847E28A3C94F0001BABA /* Homework3ViewController.swift in Sources */,
