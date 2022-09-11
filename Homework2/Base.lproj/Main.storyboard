@@ -157,25 +157,8 @@
                                             <segue destination="QPo-Mj-D0x" kind="show" id="jIB-If-qqh"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Xf6-NI-cND" style="IBUITableViewCellStyleDefault" id="6Sw-PC-Ltv">
-                                        <rect key="frame" x="0.0" y="175" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Sw-PC-Ltv" id="2UQ-kZ-LcI">
-                                            <rect key="frame" x="0.0" y="0.0" width="385.5" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Login View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="Xf6-NI-cND">
-                                                    <rect key="frame" x="20" y="0.0" width="357.5" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="wwS-Py-4Wv" style="IBUITableViewCellStyleDefault" id="b9M-4b-JD6">
-                                        <rect key="frame" x="0.0" y="218.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="175" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b9M-4b-JD6" id="n0t-Hm-NTf">
                                             <rect key="frame" x="0.0" y="0.0" width="385.5" height="43.5"/>
@@ -191,7 +174,27 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Hpk-By-ngp" kind="show" id="xTo-8r-YkK"/>
+                                            <segue destination="Hpk-By-ngp" kind="show" id="Xy5-JJ-TXf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="eT8-yb-fID" style="IBUITableViewCellStyleDefault" id="S7S-ey-nCk">
+                                        <rect key="frame" x="0.0" y="218.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S7S-ey-nCk" id="nh2-2b-vja">
+                                            <rect key="frame" x="0.0" y="0.0" width="385.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Kakao Chat List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="eT8-yb-fID">
+                                                    <rect key="frame" x="20" y="0.0" width="357.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1zp-aC-6tW" kind="show" id="tbL-Uq-Myz"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -351,7 +354,99 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XKp-9w-w64" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3481.1594202898555" y="392.41071428571428"/>
+            <point key="canvasLocation" x="-3907" y="488"/>
+        </scene>
+        <!--Kakao Chat List View Controller-->
+        <scene sceneID="s56-va-xM9">
+            <objects>
+                <viewController storyboardIdentifier="KakaoChatListViewController" id="1zp-aC-6tW" customClass="KakaoChatListViewController" customModule="UIKitStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MHK-JD-QZb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1Q4-Bj-inJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Cmp-8n-2ae">
+                                    <size key="itemSize" width="414" height="138"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChatListCell" id="RqM-6K-lir" customClass="ChatListCell" customModule="UIKitStudy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sAD-IE-oPB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ugh-on-qy0">
+                                                    <rect key="frame" x="16" y="29" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="12K-mJ-sMw"/>
+                                                        <constraint firstAttribute="width" constant="80" id="4vL-Hl-ulO"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLM-hF-7Eb">
+                                                    <rect key="frame" x="116" y="29" width="38.5" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 / 10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Oe-gk-2mh">
+                                                    <rect key="frame" x="353" y="58.5" width="45" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="대화내용" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2D6-Ff-Ko8">
+                                                    <rect key="frame" x="116" y="60.5" width="62.5" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7Oe-gk-2mh" firstAttribute="centerY" secondItem="sAD-IE-oPB" secondAttribute="centerY" id="2YU-gP-dN0"/>
+                                                <constraint firstItem="Ugh-on-qy0" firstAttribute="centerY" secondItem="sAD-IE-oPB" secondAttribute="centerY" id="7wC-V9-z0X"/>
+                                                <constraint firstItem="Ugh-on-qy0" firstAttribute="leading" secondItem="sAD-IE-oPB" secondAttribute="leading" constant="16" id="BGN-x0-qMN"/>
+                                                <constraint firstAttribute="trailing" secondItem="7Oe-gk-2mh" secondAttribute="trailing" constant="16" id="Ry7-Cs-C6B"/>
+                                                <constraint firstItem="BLM-hF-7Eb" firstAttribute="leading" secondItem="Ugh-on-qy0" secondAttribute="trailing" constant="20" id="Xmd-H0-tj8"/>
+                                                <constraint firstItem="BLM-hF-7Eb" firstAttribute="top" secondItem="Ugh-on-qy0" secondAttribute="top" id="ZTQ-qP-O6h"/>
+                                                <constraint firstItem="2D6-Ff-Ko8" firstAttribute="leading" secondItem="BLM-hF-7Eb" secondAttribute="leading" id="ltS-1m-kkF"/>
+                                                <constraint firstItem="7Oe-gk-2mh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2D6-Ff-Ko8" secondAttribute="trailing" constant="10" id="ozM-JA-K8A"/>
+                                                <constraint firstItem="2D6-Ff-Ko8" firstAttribute="top" secondItem="BLM-hF-7Eb" secondAttribute="bottom" constant="5" id="soK-wX-KyW"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="414" height="138"/>
+                                        <connections>
+                                            <outlet property="chatDateLabel" destination="7Oe-gk-2mh" id="fXr-bJ-88d"/>
+                                            <outlet property="chatLabel" destination="2D6-Ff-Ko8" id="9B6-um-lLr"/>
+                                            <outlet property="profileImageView" destination="Ugh-on-qy0" id="zQn-bF-myK"/>
+                                            <outlet property="userNameLabel" destination="BLM-hF-7Eb" id="DgC-2S-R6x"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="q9U-Iv-f1K"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Q4-Bj-inJ" firstAttribute="top" secondItem="q9U-Iv-f1K" secondAttribute="top" id="JcA-3W-ipW"/>
+                            <constraint firstItem="1Q4-Bj-inJ" firstAttribute="leading" secondItem="q9U-Iv-f1K" secondAttribute="leading" id="eoa-iL-o8m"/>
+                            <constraint firstItem="q9U-Iv-f1K" firstAttribute="bottom" secondItem="1Q4-Bj-inJ" secondAttribute="bottom" id="rZo-0I-Zl2"/>
+                            <constraint firstItem="q9U-Iv-f1K" firstAttribute="trailing" secondItem="1Q4-Bj-inJ" secondAttribute="trailing" id="tD0-5c-Cdg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="79m-bn-HaX"/>
+                    <connections>
+                        <outlet property="collectionView" destination="1Q4-Bj-inJ" id="316-Qd-PPc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJC-Fd-S6y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2333.3333333333335" y="567.1875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XD9-P9-oPN">
