@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B613847C28A3C93E0001BABA /* Homework3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B613847B28A3C93E0001BABA /* Homework3.storyboard */; };
 		B613847E28A3C94F0001BABA /* Homework3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613847D28A3C94F0001BABA /* Homework3ViewController.swift */; };
+		B61520D828E0665D00C1CD83 /* MyPoint.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61520D728E0665D00C1CD83 /* MyPoint.storyboard */; };
 		B63564BC28B9D6CE001108BF /* FrameworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BB28B9D6CE001108BF /* FrameworkModel.swift */; };
 		B63564BE28B9D75C001108BF /* AppleFrameworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BD28B9D75C001108BF /* AppleFrameworkViewController.swift */; };
 		B63564C028B9D885001108BF /* AppleFrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BF28B9D885001108BF /* AppleFrameworkCell.swift */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		B613847B28A3C93E0001BABA /* Homework3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homework3.storyboard; sourceTree = "<group>"; };
 		B613847D28A3C94F0001BABA /* Homework3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework3ViewController.swift; sourceTree = "<group>"; };
+		B61520D728E0665D00C1CD83 /* MyPoint.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPoint.storyboard; sourceTree = "<group>"; };
 		B63564BB28B9D6CE001108BF /* FrameworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkModel.swift; sourceTree = "<group>"; };
 		B63564BD28B9D75C001108BF /* AppleFrameworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkViewController.swift; sourceTree = "<group>"; };
 		B63564BF28B9D885001108BF /* AppleFrameworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkCell.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				B66DBF4D28DFFFF1002B3CA4 /* TossBenefitStoryBoard.storyboard */,
+				B61520D728E0665D00C1CD83 /* MyPoint.storyboard */,
 				B66DBF4F28E00015002B3CA4 /* BenefitViewController.swift */,
 				B66DBF5628E003C1002B3CA4 /* MyPointCell.swift */,
 				B66DBF5828E003E7002B3CA4 /* TodayBenefitCell.swift */,
@@ -333,6 +336,7 @@
 				B66DBF4E28DFFFF1002B3CA4 /* TossBenefitStoryBoard.storyboard in Resources */,
 				B68ED80C28A6028500F1B064 /* Homework4.storyboard in Resources */,
 				B613847C28A3C93E0001BABA /* Homework3.storyboard in Resources */,
+				B61520D828E0665D00C1CD83 /* MyPoint.storyboard in Resources */,
 				B65794D8289A799300121193 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
