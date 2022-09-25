@@ -29,6 +29,14 @@
 		B661B64D28B79BDD004EFE56 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661B64C28B79BDD004EFE56 /* ChatListViewController.swift */; };
 		B661B64F28B79BF5004EFE56 /* Homework6.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B661B64E28B79BF5004EFE56 /* Homework6.storyboard */; };
 		B661B65128B79CDD004EFE56 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661B65028B79CDD004EFE56 /* Chat.swift */; };
+		B66DBF4E28DFFFF1002B3CA4 /* TossBenefitStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66DBF4D28DFFFF1002B3CA4 /* TossBenefitStoryBoard.storyboard */; };
+		B66DBF5028E00015002B3CA4 /* BenefitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DBF4F28E00015002B3CA4 /* BenefitViewController.swift */; };
+		B66DBF5228E001FF002B3CA4 /* Benefit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DBF5128E001FF002B3CA4 /* Benefit.swift */; };
+		B66DBF5428E00207002B3CA4 /* MyPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DBF5328E00207002B3CA4 /* MyPoint.swift */; };
+		B66DBF5728E003C1002B3CA4 /* MyPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DBF5628E003C1002B3CA4 /* MyPointCell.swift */; };
+		B66DBF5928E003E7002B3CA4 /* TodayBenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DBF5828E003E7002B3CA4 /* TodayBenefitCell.swift */; };
+		B66DBF5B28E003F5002B3CA4 /* BenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DBF5A28E003F5002B3CA4 /* BenefitCell.swift */; };
+		B66DBF5D28E006F0002B3CA4 /* TodaySectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DBF5C28E006F0002B3CA4 /* TodaySectionItem.swift */; };
 		B680909828A8C925002F694F /* Homework5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680909728A8C925002F694F /* Homework5ViewController.swift */; };
 		B680909A28A8C92D002F694F /* Homework5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B680909928A8C92D002F694F /* Homework5.storyboard */; };
 		B68ED80C28A6028500F1B064 /* Homework4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68ED80B28A6028500F1B064 /* Homework4.storyboard */; };
@@ -67,6 +75,14 @@
 		B661B64C28B79BDD004EFE56 /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
 		B661B64E28B79BF5004EFE56 /* Homework6.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homework6.storyboard; sourceTree = "<group>"; };
 		B661B65028B79CDD004EFE56 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		B66DBF4D28DFFFF1002B3CA4 /* TossBenefitStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TossBenefitStoryBoard.storyboard; sourceTree = "<group>"; };
+		B66DBF4F28E00015002B3CA4 /* BenefitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitViewController.swift; sourceTree = "<group>"; };
+		B66DBF5128E001FF002B3CA4 /* Benefit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Benefit.swift; sourceTree = "<group>"; };
+		B66DBF5328E00207002B3CA4 /* MyPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPoint.swift; sourceTree = "<group>"; };
+		B66DBF5628E003C1002B3CA4 /* MyPointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPointCell.swift; sourceTree = "<group>"; };
+		B66DBF5828E003E7002B3CA4 /* TodayBenefitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayBenefitCell.swift; sourceTree = "<group>"; };
+		B66DBF5A28E003F5002B3CA4 /* BenefitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitCell.swift; sourceTree = "<group>"; };
+		B66DBF5C28E006F0002B3CA4 /* TodaySectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaySectionItem.swift; sourceTree = "<group>"; };
 		B680909728A8C925002F694F /* Homework5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework5ViewController.swift; sourceTree = "<group>"; };
 		B680909928A8C92D002F694F /* Homework5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homework5.storyboard; sourceTree = "<group>"; };
 		B68ED80B28A6028500F1B064 /* Homework4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homework4.storyboard; sourceTree = "<group>"; };
@@ -122,6 +138,7 @@
 		B65794C4289A799300121193 = {
 			isa = PBXGroup;
 			children = (
+				B66DBF4828DFFE6F002B3CA4 /* Toss */,
 				B6512E7428D2025500ECE6D5 /* Instagram */,
 				B65E34A328CC9EF8009EF028 /* KakaoChatList */,
 				B6C8834528C22A1D003EAC2D /* Spotify */,
@@ -188,6 +205,29 @@
 				B661B64E28B79BF5004EFE56 /* Homework6.storyboard */,
 			);
 			path = Homework6;
+			sourceTree = "<group>";
+		};
+		B66DBF4828DFFE6F002B3CA4 /* Toss */ = {
+			isa = PBXGroup;
+			children = (
+				B66DBF4D28DFFFF1002B3CA4 /* TossBenefitStoryBoard.storyboard */,
+				B66DBF4F28E00015002B3CA4 /* BenefitViewController.swift */,
+				B66DBF5628E003C1002B3CA4 /* MyPointCell.swift */,
+				B66DBF5828E003E7002B3CA4 /* TodayBenefitCell.swift */,
+				B66DBF5A28E003F5002B3CA4 /* BenefitCell.swift */,
+				B66DBF5528E00210002B3CA4 /* Model */,
+			);
+			path = Toss;
+			sourceTree = "<group>";
+		};
+		B66DBF5528E00210002B3CA4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B66DBF5128E001FF002B3CA4 /* Benefit.swift */,
+				B66DBF5328E00207002B3CA4 /* MyPoint.swift */,
+				B66DBF5C28E006F0002B3CA4 /* TodaySectionItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B680909628A8C913002F694F /* Homework5 */ = {
@@ -290,6 +330,7 @@
 				B680909A28A8C92D002F694F /* Homework5.storyboard in Resources */,
 				B65794DD289A799300121193 /* LaunchScreen.storyboard in Resources */,
 				B65794DA289A799300121193 /* Assets.xcassets in Resources */,
+				B66DBF4E28DFFFF1002B3CA4 /* TossBenefitStoryBoard.storyboard in Resources */,
 				B68ED80C28A6028500F1B064 /* Homework4.storyboard in Resources */,
 				B613847C28A3C93E0001BABA /* Homework3.storyboard in Resources */,
 				B65794D8289A799300121193 /* Main.storyboard in Resources */,
@@ -310,7 +351,9 @@
 				B6512E7828D2036800ECE6D5 /* InstagramViewController.swift in Sources */,
 				B6A8F0D828A8CC0D0065F4BA /* StockModel.swift in Sources */,
 				B6512E7A28D2046600ECE6D5 /* InstagramCell.swift in Sources */,
+				B66DBF5428E00207002B3CA4 /* MyPoint.swift in Sources */,
 				B661B64D28B79BDD004EFE56 /* ChatListViewController.swift in Sources */,
+				B66DBF5B28E003F5002B3CA4 /* BenefitCell.swift in Sources */,
 				B65E34A728CCA089009EF028 /* ChatList.swift in Sources */,
 				B65E34A528CC9F0B009EF028 /* KakaoChatListViewController.swift in Sources */,
 				B6C8834928C22D6F003EAC2D /* SpotifyModel.swift in Sources */,
@@ -318,12 +361,17 @@
 				B65FA37D28BB3A2000C9DAB7 /* Focus.swift in Sources */,
 				B68ED80E28A6029300F1B064 /* HomeWork4ViewController.swift in Sources */,
 				B65FA37B28BB3A1800C9DAB7 /* HeadSpaceViewController.swift in Sources */,
+				B66DBF5728E003C1002B3CA4 /* MyPointCell.swift in Sources */,
 				B63564C028B9D885001108BF /* AppleFrameworkCell.swift in Sources */,
+				B66DBF5D28E006F0002B3CA4 /* TodaySectionItem.swift in Sources */,
 				B6C8834728C22AA4003EAC2D /* SpotifyViewCoViewController.swift in Sources */,
+				B66DBF5928E003E7002B3CA4 /* TodayBenefitCell.swift in Sources */,
 				B661B64928B79BAF004EFE56 /* ChatListCollectionViewCell.swift in Sources */,
 				B65794D1289A799300121193 /* AppDelegate.swift in Sources */,
 				B6C8834D28C438D3003EAC2D /* BannerCell.swift in Sources */,
 				B63564BE28B9D75C001108BF /* AppleFrameworkViewController.swift in Sources */,
+				B66DBF5228E001FF002B3CA4 /* Benefit.swift in Sources */,
+				B66DBF5028E00015002B3CA4 /* BenefitViewController.swift in Sources */,
 				B661B65128B79CDD004EFE56 /* Chat.swift in Sources */,
 				B613847E28A3C94F0001BABA /* Homework3ViewController.swift in Sources */,
 				B6C8834B28C43379003EAC2D /* BannerInfo.swift in Sources */,
