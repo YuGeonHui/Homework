@@ -10,6 +10,13 @@
 		B613847C28A3C93E0001BABA /* Homework3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B613847B28A3C93E0001BABA /* Homework3.storyboard */; };
 		B613847E28A3C94F0001BABA /* Homework3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613847D28A3C94F0001BABA /* Homework3ViewController.swift */; };
 		B61520D828E0665D00C1CD83 /* MyPoint.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61520D728E0665D00C1CD83 /* MyPoint.storyboard */; };
+		B61520DC28E0686600C1CD83 /* MyPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61520DB28E0686600C1CD83 /* MyPointViewController.swift */; };
+		B61520DF28E078AE00C1CD83 /* ButtonBenefit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61520DE28E078AE00C1CD83 /* ButtonBenefit.storyboard */; };
+		B61520E128E078BC00C1CD83 /* ButtonBenefitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61520E028E078BC00C1CD83 /* ButtonBenefitViewController.swift */; };
+		B61520E428E0790900C1CD83 /* BenefitDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61520E328E0790900C1CD83 /* BenefitDetails.swift */; };
+		B61520E628E07D6300C1CD83 /* BenefitGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61520E528E07D6300C1CD83 /* BenefitGuideView.swift */; };
+		B61520E828E09D9800C1CD83 /* BenefitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61520E728E09D9800C1CD83 /* BenefitListViewModel.swift */; };
+		B61520EA28E09F3E00C1CD83 /* MyPointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61520E928E09F3E00C1CD83 /* MyPointViewModel.swift */; };
 		B63564BC28B9D6CE001108BF /* FrameworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BB28B9D6CE001108BF /* FrameworkModel.swift */; };
 		B63564BE28B9D75C001108BF /* AppleFrameworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BD28B9D75C001108BF /* AppleFrameworkViewController.swift */; };
 		B63564C028B9D885001108BF /* AppleFrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BF28B9D885001108BF /* AppleFrameworkCell.swift */; };
@@ -55,6 +62,13 @@
 		B613847B28A3C93E0001BABA /* Homework3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homework3.storyboard; sourceTree = "<group>"; };
 		B613847D28A3C94F0001BABA /* Homework3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework3ViewController.swift; sourceTree = "<group>"; };
 		B61520D728E0665D00C1CD83 /* MyPoint.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPoint.storyboard; sourceTree = "<group>"; };
+		B61520DB28E0686600C1CD83 /* MyPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPointViewController.swift; sourceTree = "<group>"; };
+		B61520DE28E078AE00C1CD83 /* ButtonBenefit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ButtonBenefit.storyboard; sourceTree = "<group>"; };
+		B61520E028E078BC00C1CD83 /* ButtonBenefitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBenefitViewController.swift; sourceTree = "<group>"; };
+		B61520E328E0790900C1CD83 /* BenefitDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitDetails.swift; sourceTree = "<group>"; };
+		B61520E528E07D6300C1CD83 /* BenefitGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitGuideView.swift; sourceTree = "<group>"; };
+		B61520E728E09D9800C1CD83 /* BenefitListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitListViewModel.swift; sourceTree = "<group>"; };
+		B61520E928E09F3E00C1CD83 /* MyPointViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPointViewModel.swift; sourceTree = "<group>"; };
 		B63564BB28B9D6CE001108BF /* FrameworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkModel.swift; sourceTree = "<group>"; };
 		B63564BD28B9D75C001108BF /* AppleFrameworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkViewController.swift; sourceTree = "<group>"; };
 		B63564BF28B9D885001108BF /* AppleFrameworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkCell.swift; sourceTree = "<group>"; };
@@ -116,6 +130,26 @@
 				B613847D28A3C94F0001BABA /* Homework3ViewController.swift */,
 			);
 			path = Homework3;
+			sourceTree = "<group>";
+		};
+		B61520DD28E0687900C1CD83 /* MyPoint */ = {
+			isa = PBXGroup;
+			children = (
+				B61520D728E0665D00C1CD83 /* MyPoint.storyboard */,
+				B61520DB28E0686600C1CD83 /* MyPointViewController.swift */,
+				B61520E928E09F3E00C1CD83 /* MyPointViewModel.swift */,
+			);
+			path = MyPoint;
+			sourceTree = "<group>";
+		};
+		B61520E228E078C200C1CD83 /* Benefit */ = {
+			isa = PBXGroup;
+			children = (
+				B61520E028E078BC00C1CD83 /* ButtonBenefitViewController.swift */,
+				B61520DE28E078AE00C1CD83 /* ButtonBenefit.storyboard */,
+				B61520E528E07D6300C1CD83 /* BenefitGuideView.swift */,
+			);
+			path = Benefit;
 			sourceTree = "<group>";
 		};
 		B63564BA28B9D6A6001108BF /* Homework7 */ = {
@@ -212,13 +246,15 @@
 		B66DBF4828DFFE6F002B3CA4 /* Toss */ = {
 			isa = PBXGroup;
 			children = (
+				B61520E228E078C200C1CD83 /* Benefit */,
 				B66DBF4D28DFFFF1002B3CA4 /* TossBenefitStoryBoard.storyboard */,
-				B61520D728E0665D00C1CD83 /* MyPoint.storyboard */,
 				B66DBF4F28E00015002B3CA4 /* BenefitViewController.swift */,
+				B61520E728E09D9800C1CD83 /* BenefitListViewModel.swift */,
 				B66DBF5628E003C1002B3CA4 /* MyPointCell.swift */,
 				B66DBF5828E003E7002B3CA4 /* TodayBenefitCell.swift */,
 				B66DBF5A28E003F5002B3CA4 /* BenefitCell.swift */,
 				B66DBF5528E00210002B3CA4 /* Model */,
+				B61520DD28E0687900C1CD83 /* MyPoint */,
 			);
 			path = Toss;
 			sourceTree = "<group>";
@@ -229,6 +265,7 @@
 				B66DBF5128E001FF002B3CA4 /* Benefit.swift */,
 				B66DBF5328E00207002B3CA4 /* MyPoint.swift */,
 				B66DBF5C28E006F0002B3CA4 /* TodaySectionItem.swift */,
+				B61520E328E0790900C1CD83 /* BenefitDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -337,6 +374,7 @@
 				B68ED80C28A6028500F1B064 /* Homework4.storyboard in Resources */,
 				B613847C28A3C93E0001BABA /* Homework3.storyboard in Resources */,
 				B61520D828E0665D00C1CD83 /* MyPoint.storyboard in Resources */,
+				B61520DF28E078AE00C1CD83 /* ButtonBenefit.storyboard in Resources */,
 				B65794D8289A799300121193 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,11 +390,15 @@
 				B6A8F0DA28A8D4810065F4BA /* StockRankCollectionViewCell.swift in Sources */,
 				B63564BC28B9D6CE001108BF /* FrameworkModel.swift in Sources */,
 				B65794D5289A799300121193 /* ViewController.swift in Sources */,
+				B61520EA28E09F3E00C1CD83 /* MyPointViewModel.swift in Sources */,
 				B6512E7828D2036800ECE6D5 /* InstagramViewController.swift in Sources */,
 				B6A8F0D828A8CC0D0065F4BA /* StockModel.swift in Sources */,
+				B61520E828E09D9800C1CD83 /* BenefitListViewModel.swift in Sources */,
 				B6512E7A28D2046600ECE6D5 /* InstagramCell.swift in Sources */,
 				B66DBF5428E00207002B3CA4 /* MyPoint.swift in Sources */,
 				B661B64D28B79BDD004EFE56 /* ChatListViewController.swift in Sources */,
+				B61520DC28E0686600C1CD83 /* MyPointViewController.swift in Sources */,
+				B61520E428E0790900C1CD83 /* BenefitDetails.swift in Sources */,
 				B66DBF5B28E003F5002B3CA4 /* BenefitCell.swift in Sources */,
 				B65E34A728CCA089009EF028 /* ChatList.swift in Sources */,
 				B65E34A528CC9F0B009EF028 /* KakaoChatListViewController.swift in Sources */,
@@ -366,6 +408,7 @@
 				B68ED80E28A6029300F1B064 /* HomeWork4ViewController.swift in Sources */,
 				B65FA37B28BB3A1800C9DAB7 /* HeadSpaceViewController.swift in Sources */,
 				B66DBF5728E003C1002B3CA4 /* MyPointCell.swift in Sources */,
+				B61520E628E07D6300C1CD83 /* BenefitGuideView.swift in Sources */,
 				B63564C028B9D885001108BF /* AppleFrameworkCell.swift in Sources */,
 				B66DBF5D28E006F0002B3CA4 /* TodaySectionItem.swift in Sources */,
 				B6C8834728C22AA4003EAC2D /* SpotifyViewCoViewController.swift in Sources */,
@@ -374,6 +417,7 @@
 				B65794D1289A799300121193 /* AppDelegate.swift in Sources */,
 				B6C8834D28C438D3003EAC2D /* BannerCell.swift in Sources */,
 				B63564BE28B9D75C001108BF /* AppleFrameworkViewController.swift in Sources */,
+				B61520E128E078BC00C1CD83 /* ButtonBenefitViewController.swift in Sources */,
 				B66DBF5228E001FF002B3CA4 /* Benefit.swift in Sources */,
 				B66DBF5028E00015002B3CA4 /* BenefitViewController.swift in Sources */,
 				B661B65128B79CDD004EFE56 /* Chat.swift in Sources */,
