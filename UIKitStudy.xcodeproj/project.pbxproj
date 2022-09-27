@@ -20,6 +20,7 @@
 		B63564BC28B9D6CE001108BF /* FrameworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BB28B9D6CE001108BF /* FrameworkModel.swift */; };
 		B63564BE28B9D75C001108BF /* AppleFrameworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BD28B9D75C001108BF /* AppleFrameworkViewController.swift */; };
 		B63564C028B9D885001108BF /* AppleFrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BF28B9D885001108BF /* AppleFrameworkCell.swift */; };
+		B639D7B428E1ECDF000ED327 /* ButtonBenefitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639D7B328E1ECDF000ED327 /* ButtonBenefitViewModel.swift */; };
 		B6512E7828D2036800ECE6D5 /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6512E7728D2036800ECE6D5 /* InstagramViewController.swift */; };
 		B6512E7A28D2046600ECE6D5 /* InstagramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6512E7928D2046600ECE6D5 /* InstagramCell.swift */; };
 		B65794D1289A799300121193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65794D0289A799300121193 /* AppDelegate.swift */; };
@@ -72,6 +73,7 @@
 		B63564BB28B9D6CE001108BF /* FrameworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkModel.swift; sourceTree = "<group>"; };
 		B63564BD28B9D75C001108BF /* AppleFrameworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkViewController.swift; sourceTree = "<group>"; };
 		B63564BF28B9D885001108BF /* AppleFrameworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkCell.swift; sourceTree = "<group>"; };
+		B639D7B328E1ECDF000ED327 /* ButtonBenefitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBenefitViewModel.swift; sourceTree = "<group>"; };
 		B6512E7728D2036800ECE6D5 /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
 		B6512E7928D2046600ECE6D5 /* InstagramCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCell.swift; sourceTree = "<group>"; };
 		B65794CD289A799300121193 /* UIKitStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +150,7 @@
 				B61520E028E078BC00C1CD83 /* ButtonBenefitViewController.swift */,
 				B61520DE28E078AE00C1CD83 /* ButtonBenefit.storyboard */,
 				B61520E528E07D6300C1CD83 /* BenefitGuideView.swift */,
+				B639D7B328E1ECDF000ED327 /* ButtonBenefitViewModel.swift */,
 			);
 			path = Benefit;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				B66DBF5028E00015002B3CA4 /* BenefitViewController.swift in Sources */,
 				B661B65128B79CDD004EFE56 /* Chat.swift in Sources */,
 				B613847E28A3C94F0001BABA /* Homework3ViewController.swift in Sources */,
+				B639D7B428E1ECDF000ED327 /* ButtonBenefitViewModel.swift in Sources */,
 				B6C8834B28C43379003EAC2D /* BannerInfo.swift in Sources */,
 				B65794D3289A799300121193 /* SceneDelegate.swift in Sources */,
 				B65FA37F28BB3AC600C9DAB7 /* HeadSpaceCollectionViewCell.swift in Sources */,

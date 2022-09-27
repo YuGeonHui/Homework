@@ -21,9 +21,6 @@ class BenefitViewController: UIViewController {
     
     var datasource: UICollectionViewDiffableDataSource<Section, Item>!
     
-//    var todaySectionItem: [AnyHashable] = TodaySectionItem(point: .defualt, today: .today).sectionItems
-//    var otherSectionItem: [AnyHashable] = Benefit.others
-    
     let vm: BenefitListViewModel = BenefitListViewModel()
     
     var subscriptions = Set<AnyCancellable>()
@@ -85,7 +82,8 @@ class BenefitViewController: UIViewController {
                 let sb = UIStoryboard(name: "ButtonBenefit", bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: "ButtonBenefitViewController") as! ButtonBenefitViewController
                 
-                vc.benefit = benefit
+                vc.viewModel = ButtonBenefitViewModel(benefit: benefit)
+                
                 self.navigationController?.pushViewController(vc, animated: true)
                 
             }.store(in: &subscriptions)
@@ -96,9 +94,7 @@ class BenefitViewController: UIViewController {
                 let sb = UIStoryboard(name: "MyPoint", bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: "MyPointViewController") as! MyPointViewController
                 
-//                vc.point = point
-                
-                vc.viewModel.point = point
+                vc.viewModel = MyPointViewModel(point: point)
                 
                 self.navigationController?.pushViewController(vc, animated: true)
             }.store(in: &subscriptions)
@@ -174,8 +170,6 @@ extension BenefitViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let item = datasource.itemIdentifier(for: indexPath)
-        print("----> \(item)")
-        
         if let benefit = item as? Benefit {
             
             vm.benefitDidTapped.send(benefit)
@@ -185,7 +179,7 @@ extension BenefitViewController: UICollectionViewDelegate {
             vm.pointDidTapped.send(point)
             
         } else {
-            // no-op
+            
         }
     }
 }

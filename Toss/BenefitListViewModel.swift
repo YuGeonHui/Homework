@@ -16,6 +16,7 @@ final class BenefitListViewModel {
     let benefitDidTapped = PassthroughSubject<Benefit, Never>()
     let pointDidTapped = PassthroughSubject<MyPoint, Never>()
     
+    // MARK: Network 묘사
     func fetchItems() {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
