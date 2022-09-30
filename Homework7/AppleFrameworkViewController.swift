@@ -42,6 +42,8 @@ class AppleFrameworkViewController: UIViewController {
         dataSorce.apply(snapShot)
         
         collectionView.collectionViewLayout = layout()
+        
+        collectionView.delegate = self
     }
     
     private func layout() -> UICollectionViewCompositionalLayout {
@@ -61,4 +63,17 @@ class AppleFrameworkViewController: UIViewController {
     }
 }
 
-
+extension AppleFrameworkViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let framework = list[indexPath.item]
+        
+        // 우리가 띄우고 싶은 것 : FramewrokDetailViewController
+        
+        let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "FramewrokDetailViewController") as! FramewrokDetailViewController
+        
+        present(vc, animated: true)
+    }
+}

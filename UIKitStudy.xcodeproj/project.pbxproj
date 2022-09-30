@@ -21,6 +21,8 @@
 		B63564BE28B9D75C001108BF /* AppleFrameworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BD28B9D75C001108BF /* AppleFrameworkViewController.swift */; };
 		B63564C028B9D885001108BF /* AppleFrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BF28B9D885001108BF /* AppleFrameworkCell.swift */; };
 		B639D7B428E1ECDF000ED327 /* ButtonBenefitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639D7B328E1ECDF000ED327 /* ButtonBenefitViewModel.swift */; };
+		B63A1DED28E6AA13005FABC8 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63A1DEC28E6AA13005FABC8 /* Detail.storyboard */; };
+		B63A1DEF28E6AA23005FABC8 /* FramewrokDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63A1DEE28E6AA23005FABC8 /* FramewrokDetailViewController.swift */; };
 		B6512E7828D2036800ECE6D5 /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6512E7728D2036800ECE6D5 /* InstagramViewController.swift */; };
 		B6512E7A28D2046600ECE6D5 /* InstagramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6512E7928D2046600ECE6D5 /* InstagramCell.swift */; };
 		B65794D1289A799300121193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65794D0289A799300121193 /* AppDelegate.swift */; };
@@ -74,6 +76,8 @@
 		B63564BD28B9D75C001108BF /* AppleFrameworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkViewController.swift; sourceTree = "<group>"; };
 		B63564BF28B9D885001108BF /* AppleFrameworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkCell.swift; sourceTree = "<group>"; };
 		B639D7B328E1ECDF000ED327 /* ButtonBenefitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBenefitViewModel.swift; sourceTree = "<group>"; };
+		B63A1DEC28E6AA13005FABC8 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		B63A1DEE28E6AA23005FABC8 /* FramewrokDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramewrokDetailViewController.swift; sourceTree = "<group>"; };
 		B6512E7728D2036800ECE6D5 /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
 		B6512E7928D2046600ECE6D5 /* InstagramCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCell.swift; sourceTree = "<group>"; };
 		B65794CD289A799300121193 /* UIKitStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +165,8 @@
 				B63564BB28B9D6CE001108BF /* FrameworkModel.swift */,
 				B63564BD28B9D75C001108BF /* AppleFrameworkViewController.swift */,
 				B63564BF28B9D885001108BF /* AppleFrameworkCell.swift */,
+				B63A1DEC28E6AA13005FABC8 /* Detail.storyboard */,
+				B63A1DEE28E6AA23005FABC8 /* FramewrokDetailViewController.swift */,
 			);
 			path = Homework7;
 			sourceTree = "<group>";
@@ -249,13 +255,13 @@
 		B66DBF4828DFFE6F002B3CA4 /* Toss */ = {
 			isa = PBXGroup;
 			children = (
-				B61520E228E078C200C1CD83 /* Benefit */,
 				B66DBF4D28DFFFF1002B3CA4 /* TossBenefitStoryBoard.storyboard */,
 				B66DBF4F28E00015002B3CA4 /* BenefitViewController.swift */,
 				B61520E728E09D9800C1CD83 /* BenefitListViewModel.swift */,
 				B66DBF5628E003C1002B3CA4 /* MyPointCell.swift */,
 				B66DBF5828E003E7002B3CA4 /* TodayBenefitCell.swift */,
 				B66DBF5A28E003F5002B3CA4 /* BenefitCell.swift */,
+				B61520E228E078C200C1CD83 /* Benefit */,
 				B66DBF5528E00210002B3CA4 /* Model */,
 				B61520DD28E0687900C1CD83 /* MyPoint */,
 			);
@@ -373,6 +379,7 @@
 				B680909A28A8C92D002F694F /* Homework5.storyboard in Resources */,
 				B65794DD289A799300121193 /* LaunchScreen.storyboard in Resources */,
 				B65794DA289A799300121193 /* Assets.xcassets in Resources */,
+				B63A1DED28E6AA13005FABC8 /* Detail.storyboard in Resources */,
 				B66DBF4E28DFFFF1002B3CA4 /* TossBenefitStoryBoard.storyboard in Resources */,
 				B68ED80C28A6028500F1B064 /* Homework4.storyboard in Resources */,
 				B613847C28A3C93E0001BABA /* Homework3.storyboard in Resources */,
@@ -426,6 +433,7 @@
 				B661B65128B79CDD004EFE56 /* Chat.swift in Sources */,
 				B613847E28A3C94F0001BABA /* Homework3ViewController.swift in Sources */,
 				B639D7B428E1ECDF000ED327 /* ButtonBenefitViewModel.swift in Sources */,
+				B63A1DEF28E6AA23005FABC8 /* FramewrokDetailViewController.swift in Sources */,
 				B6C8834B28C43379003EAC2D /* BannerInfo.swift in Sources */,
 				B65794D3289A799300121193 /* SceneDelegate.swift in Sources */,
 				B65FA37F28BB3AC600C9DAB7 /* HeadSpaceCollectionViewCell.swift in Sources */,
