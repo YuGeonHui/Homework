@@ -7,13 +7,19 @@
 
 import Foundation
 import UIKit
+import Combine
 
 class AppleFrameworkViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+
+    // Combine
+    var subscriptions = Set<AnyCancellable>()
+    let didSelect = PassthroughSubject<AppleFramework, Never>()
     
-    let list: [AppleFramework] = AppleFramework.list
-    
+    let items = CurrentValueSubject<[AppleFramework], Never>(AppleFramework.list)
+//    @Published var list: [AppleFramework] = AppleFramework.list
+
     var dataSorce: UICollectionViewDiffableDataSource<Section, Item>!
     
     typealias Item = AppleFramework
@@ -23,8 +29,52 @@ class AppleFrameworkViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureCollectionView()
+        bind()
+       
+        collectionView.collectionViewLayout = layout()
+        collectionView.delegate = self
+    }
     
-        // collectionView.delegate = self
+    private func bind() {
+        bindInput()
+        bindOutput()
+    }
+    
+    private func bindInput() {
+    
+        didSelect
+            .receive(on: RunLoop.main)
+            .sink { [unowned self] framework in
+            
+            let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "FramewrokDetailViewController") as! FramewrokDetailViewController
+            vc.framework = framework
+    //        vc.modalPresentationStyle = .fullScreen
+            
+            self.present(vc, animated: true)
+        }.store(in: &subscriptions)
+    }
+    
+    private func bindOutput() {
+        
+        items
+            .receive(on: RunLoop.main)
+            .sink { [unowned self] list in
+                self.applySessionItems(list)
+            }.store(in: &subscriptions)
+    }
+    
+    private func applySessionItems(_ items: [Item], to section: Section = .main) {
+        
+        var snapShot = NSDiffableDataSourceSnapshot<Section, Item>()
+        snapShot.appendSections([section])
+        snapShot.appendItems(items, toSection: section)
+        dataSorce.apply(snapShot)
+    }
+    
+    private func configureCollectionView()  {
         
         dataSorce = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView, cellProvider: { collectionView, indexPath, item in
         
@@ -35,15 +85,6 @@ class AppleFrameworkViewController: UIViewController {
             cell.configure(item)
             return cell
         })
-        
-        var snapShot = NSDiffableDataSourceSnapshot<Section, Item>()
-        snapShot.appendSections([.main])
-        snapShot.appendItems(list, toSection: .main)
-        dataSorce.apply(snapShot)
-        
-        collectionView.collectionViewLayout = layout()
-        
-        collectionView.delegate = self
     }
     
     private func layout() -> UICollectionViewCompositionalLayout {
@@ -67,13 +108,9 @@ extension AppleFrameworkViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let framework = list[indexPath.item]
+//        let framework = list[indexPath.item]
         
-        let storyboard = UIStoryboard(name: "Detail", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "FramewrokDetailViewController") as! FramewrokDetailViewController
-        vc.framework = framework
-//        vc.modalPresentationStyle = .fullScreen
-        
-        present(vc, animated: true)
+        let framework = items.value[indexPath.item]
+        didSelect.send(framework)
     }
 }
