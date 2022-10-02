@@ -52,6 +52,8 @@
 		B680909A28A8C92D002F694F /* Homework5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B680909928A8C92D002F694F /* Homework5.storyboard */; };
 		B68ED80C28A6028500F1B064 /* Homework4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68ED80B28A6028500F1B064 /* Homework4.storyboard */; };
 		B68ED80E28A6029300F1B064 /* HomeWork4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68ED80D28A6029300F1B064 /* HomeWork4ViewController.swift */; };
+		B695783428E938C2009AAA6C /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695783328E938C2009AAA6C /* FrameworkDetailViewModel.swift */; };
+		B695783628E938D2009AAA6C /* FrameworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B695783528E938D2009AAA6C /* FrameworkListViewModel.swift */; };
 		B6A7B98D28CCA48000E83A92 /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A7B98C28CCA48000E83A92 /* ChatListCell.swift */; };
 		B6A8F0D828A8CC0D0065F4BA /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A8F0D728A8CC0D0065F4BA /* StockModel.swift */; };
 		B6A8F0DA28A8D4810065F4BA /* StockRankCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A8F0D928A8D4810065F4BA /* StockRankCollectionViewCell.swift */; };
@@ -109,6 +111,8 @@
 		B680909928A8C92D002F694F /* Homework5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homework5.storyboard; sourceTree = "<group>"; };
 		B68ED80B28A6028500F1B064 /* Homework4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homework4.storyboard; sourceTree = "<group>"; };
 		B68ED80D28A6029300F1B064 /* HomeWork4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWork4ViewController.swift; sourceTree = "<group>"; };
+		B695783328E938C2009AAA6C /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
+		B695783528E938D2009AAA6C /* FrameworkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewModel.swift; sourceTree = "<group>"; };
 		B6A7B98C28CCA48000E83A92 /* ChatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
 		B6A8F0D728A8CC0D0065F4BA /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
 		B6A8F0D928A8D4810065F4BA /* StockRankCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -162,11 +166,10 @@
 		B63564BA28B9D6A6001108BF /* Homework7 */ = {
 			isa = PBXGroup;
 			children = (
-				B63564BB28B9D6CE001108BF /* FrameworkModel.swift */,
-				B63564BD28B9D75C001108BF /* AppleFrameworkViewController.swift */,
-				B63564BF28B9D885001108BF /* AppleFrameworkCell.swift */,
-				B63A1DEC28E6AA13005FABC8 /* Detail.storyboard */,
-				B63A1DEE28E6AA23005FABC8 /* FramewrokDetailViewController.swift */,
+				B695783128E93894009AAA6C /* View */,
+				B695783028E9388E009AAA6C /* Model */,
+				B695783328E938C2009AAA6C /* FrameworkDetailViewModel.swift */,
+				B695783528E938D2009AAA6C /* FrameworkListViewModel.swift */,
 			);
 			path = Homework7;
 			sourceTree = "<group>";
@@ -299,6 +302,25 @@
 			path = Homework4;
 			sourceTree = "<group>";
 		};
+		B695783028E9388E009AAA6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B63564BB28B9D6CE001108BF /* FrameworkModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B695783128E93894009AAA6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B63564BD28B9D75C001108BF /* AppleFrameworkViewController.swift */,
+				B63564BF28B9D885001108BF /* AppleFrameworkCell.swift */,
+				B63A1DEC28E6AA13005FABC8 /* Detail.storyboard */,
+				B63A1DEE28E6AA23005FABC8 /* FramewrokDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B6C8834528C22A1D003EAC2D /* Spotify */ = {
 			isa = PBXGroup;
 			children = (
@@ -413,6 +435,7 @@
 				B65E34A728CCA089009EF028 /* ChatList.swift in Sources */,
 				B65E34A528CC9F0B009EF028 /* KakaoChatListViewController.swift in Sources */,
 				B6C8834928C22D6F003EAC2D /* SpotifyModel.swift in Sources */,
+				B695783628E938D2009AAA6C /* FrameworkListViewModel.swift in Sources */,
 				B6A7B98D28CCA48000E83A92 /* ChatListCell.swift in Sources */,
 				B65FA37D28BB3A2000C9DAB7 /* Focus.swift in Sources */,
 				B68ED80E28A6029300F1B064 /* HomeWork4ViewController.swift in Sources */,
@@ -426,6 +449,7 @@
 				B661B64928B79BAF004EFE56 /* ChatListCollectionViewCell.swift in Sources */,
 				B65794D1289A799300121193 /* AppDelegate.swift in Sources */,
 				B6C8834D28C438D3003EAC2D /* BannerCell.swift in Sources */,
+				B695783428E938C2009AAA6C /* FrameworkDetailViewModel.swift in Sources */,
 				B63564BE28B9D75C001108BF /* AppleFrameworkViewController.swift in Sources */,
 				B61520E128E078BC00C1CD83 /* ButtonBenefitViewController.swift in Sources */,
 				B66DBF5228E001FF002B3CA4 /* Benefit.swift in Sources */,

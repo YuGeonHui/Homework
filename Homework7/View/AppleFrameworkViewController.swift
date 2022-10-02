@@ -69,10 +69,10 @@ extension AppleFrameworkViewController: UICollectionViewDelegate {
         
         let framework = list[indexPath.item]
         
-        // 우리가 띄우고 싶은 것 : FramewrokDetailViewController
-        
         let storyboard = UIStoryboard(name: "Detail", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "FramewrokDetailViewController") as! FramewrokDetailViewController
+        vc.framework = framework
+//        vc.modalPresentationStyle = .fullScreen
         
         present(vc, animated: true)
     }
