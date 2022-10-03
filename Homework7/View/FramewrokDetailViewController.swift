@@ -6,11 +6,15 @@
 //
 
 import UIKit
+import Combine
 import SafariServices
 
 class FramewrokDetailViewController: UIViewController {
 
-    var framework: AppleFramework = AppleFramework(name: "Unknown", imageName: "", urlString: "", description: "")
+    var subscriptions = Set<AnyCancellable>()
+    let didSelect = PassthroughSubject<AppleFramework, Never>()
+    
+    @Published var framework: AppleFramework = AppleFramework(name: "Unknown", imageName: "", urlString: "", description: "")
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -19,24 +23,43 @@ class FramewrokDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.updateUI()
+        bind()
     }
     
-    func updateUI() {
+    private func bind() {
+        bindInput()
+        bindOutput()
+    }
+    
+    private func bindInput() {
         
-        imageView.image = UIImage(named: framework.imageName)
-        titleLabel.text = framework.name
-        descriptionLabel.text = framework.description
+        didSelect
+            .receive(on: RunLoop.main)
+            .sink { [unowned self] framework in
+                
+                guard let url = URL(string: framework.urlString) else {
+                    return
+                }
+                
+                let safari = SFSafariViewController(url: url)
+                present(safari, animated: true)
+            }.store(in: &subscriptions)
+    }
+    
+    private func bindOutput() {
         
+        $framework
+            .receive(on: RunLoop.main)
+            .sink { [unowned self] framework in
+                
+                self.imageView.image = UIImage(named: framework.imageName)
+                self.titleLabel.text = framework.name
+                self.descriptionLabel.text = framework.description
+                
+            }.store(in: &subscriptions)
     }
     
     @IBAction func learnMoreTapped(_ sender: Any) {
-        
-        guard let url = URL(string: framework.urlString) else {
-            return
-        }
-        
-        let safari = SFSafariViewController(url: url)
-        present(safari, animated: true)
+        didSelect.send(framework)
     }
 }

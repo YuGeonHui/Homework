@@ -12,14 +12,9 @@ import Combine
 class AppleFrameworkViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
-
-    // Combine
-    var subscriptions = Set<AnyCancellable>()
-    let didSelect = PassthroughSubject<AppleFramework, Never>()
     
-    let items = CurrentValueSubject<[AppleFramework], Never>(AppleFramework.list)
-//    @Published var list: [AppleFramework] = AppleFramework.list
-
+    var subscriptions = Set<AnyCancellable>()
+    var viewModel: FrameworkListViewModel!
     var dataSorce: UICollectionViewDiffableDataSource<Section, Item>!
     
     typealias Item = AppleFramework
@@ -30,39 +25,31 @@ class AppleFrameworkViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        viewModel = FrameworkListViewModel(items: AppleFramework.list)
         configureCollectionView()
         bind()
-       
+        
         collectionView.collectionViewLayout = layout()
         collectionView.delegate = self
     }
     
     private func bind() {
-        bindInput()
-        bindOutput()
-    }
-    
-    private func bindInput() {
-    
-        didSelect
-            .receive(on: RunLoop.main)
-            .sink { [unowned self] framework in
-            
-            let storyboard = UIStoryboard(name: "Detail", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "FramewrokDetailViewController") as! FramewrokDetailViewController
-            vc.framework = framework
-    //        vc.modalPresentationStyle = .fullScreen
-            
-            self.present(vc, animated: true)
-        }.store(in: &subscriptions)
-    }
-    
-    private func bindOutput() {
         
-        items
+        viewModel.items
             .receive(on: RunLoop.main)
             .sink { [unowned self] list in
                 self.applySessionItems(list)
+            }.store(in: &subscriptions)
+        
+        viewModel.selectedItem
+            .compactMap { $0 }
+            .receive(on: RunLoop.main)
+            .sink { framework in
+                
+                let sb = UIStoryboard(name: "Detail", bundle: nil)
+                let vc = sb.instantiateViewController(withIdentifier: "FramewrokDetailViewController") as! FramewrokDetailViewController
+                vc.framework = framework
+                self.present(vc, animated: true)
             }.store(in: &subscriptions)
     }
     
@@ -77,7 +64,7 @@ class AppleFrameworkViewController: UIViewController {
     private func configureCollectionView()  {
         
         dataSorce = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView, cellProvider: { collectionView, indexPath, item in
-        
+            
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AppleFrameworkCell", for: indexPath) as? AppleFrameworkCell else {
                 return nil
             }
@@ -99,7 +86,7 @@ class AppleFrameworkViewController: UIViewController {
         section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 12, bottom: 0, trailing: 12)
         
         let layout = UICollectionViewCompositionalLayout(section: section)
-
+        
         return layout
     }
 }
@@ -108,9 +95,6 @@ extension AppleFrameworkViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-//        let framework = list[indexPath.item]
-        
-        let framework = items.value[indexPath.item]
-        didSelect.send(framework)
+        viewModel.didSelect(at: indexPath)
     }
 }
