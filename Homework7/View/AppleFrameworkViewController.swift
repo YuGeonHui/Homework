@@ -48,7 +48,7 @@ class AppleFrameworkViewController: UIViewController {
                 
                 let sb = UIStoryboard(name: "Detail", bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: "FramewrokDetailViewController") as! FramewrokDetailViewController
-                vc.framework = framework
+                vc.framework.send(framework)
                 self.present(vc, animated: true)
             }.store(in: &subscriptions)
     }

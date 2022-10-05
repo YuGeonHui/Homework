@@ -12,9 +12,11 @@ import SafariServices
 class FramewrokDetailViewController: UIViewController {
 
     var subscriptions = Set<AnyCancellable>()
-    let didSelect = PassthroughSubject<AppleFramework, Never>()
+    let buttonTapped = PassthroughSubject<AppleFramework, Never>()
     
-    @Published var framework: AppleFramework = AppleFramework(name: "Unknown", imageName: "", urlString: "", description: "")
+    let framework = CurrentValueSubject<AppleFramework, Never>(AppleFramework(name: "Unkonw", imageName: "", urlString: "", description: ""))
+    
+//    @Published var framework: AppleFramework = AppleFramework(name: "Unknown", imageName: "", urlString: "", description: "")
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -27,28 +29,20 @@ class FramewrokDetailViewController: UIViewController {
     }
     
     private func bind() {
-        bindInput()
-        bindOutput()
-    }
-    
-    private func bindInput() {
-        
-        didSelect
+       
+        // input
+        buttonTapped
             .receive(on: RunLoop.main)
-            .sink { [unowned self] framework in
-                
-                guard let url = URL(string: framework.urlString) else {
-                    return
-                }
+            .compactMap { URL(string: $0.urlString) }
+            .sink { [unowned self] url in
                 
                 let safari = SFSafariViewController(url: url)
                 present(safari, animated: true)
+                
             }.store(in: &subscriptions)
-    }
-    
-    private func bindOutput() {
         
-        $framework
+        // output
+        framework
             .receive(on: RunLoop.main)
             .sink { [unowned self] framework in
                 
@@ -57,9 +51,10 @@ class FramewrokDetailViewController: UIViewController {
                 self.descriptionLabel.text = framework.description
                 
             }.store(in: &subscriptions)
+        
     }
     
     @IBAction func learnMoreTapped(_ sender: Any) {
-        didSelect.send(framework)
+        buttonTapped.send(framework.value)
     }
 }
