@@ -20,9 +20,14 @@
 		B63564BC28B9D6CE001108BF /* FrameworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BB28B9D6CE001108BF /* FrameworkModel.swift */; };
 		B63564BE28B9D75C001108BF /* AppleFrameworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BD28B9D75C001108BF /* AppleFrameworkViewController.swift */; };
 		B63564C028B9D885001108BF /* AppleFrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63564BF28B9D885001108BF /* AppleFrameworkCell.swift */; };
+		B638688628EDC04B001CEFAE /* CarrotHomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638688528EDC04B001CEFAE /* CarrotHomeTabViewController.swift */; };
+		B638688A28EDC0A3001CEFAE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638688928EDC0A3001CEFAE /* NetworkService.swift */; };
+		B638688C28EDC1F3001CEFAE /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638688B28EDC1F3001CEFAE /* Resources.swift */; };
 		B639D7B428E1ECDF000ED327 /* ButtonBenefitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639D7B328E1ECDF000ED327 /* ButtonBenefitViewModel.swift */; };
 		B63A1DED28E6AA13005FABC8 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63A1DEC28E6AA13005FABC8 /* Detail.storyboard */; };
 		B63A1DEF28E6AA23005FABC8 /* FramewrokDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63A1DEE28E6AA23005FABC8 /* FramewrokDetailViewController.swift */; };
+		B64970C428EEB34800BD0F98 /* ItemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64970C328EEB34800BD0F98 /* ItemInfo.swift */; };
+		B64970C728EEB38700BD0F98 /* Publisher+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64970C628EEB38700BD0F98 /* Publisher+Utils.swift */; };
 		B6512E7828D2036800ECE6D5 /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6512E7728D2036800ECE6D5 /* InstagramViewController.swift */; };
 		B6512E7A28D2046600ECE6D5 /* InstagramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6512E7928D2046600ECE6D5 /* InstagramCell.swift */; };
 		B65794D1289A799300121193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65794D0289A799300121193 /* AppDelegate.swift */; };
@@ -77,9 +82,14 @@
 		B63564BB28B9D6CE001108BF /* FrameworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkModel.swift; sourceTree = "<group>"; };
 		B63564BD28B9D75C001108BF /* AppleFrameworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkViewController.swift; sourceTree = "<group>"; };
 		B63564BF28B9D885001108BF /* AppleFrameworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkCell.swift; sourceTree = "<group>"; };
+		B638688528EDC04B001CEFAE /* CarrotHomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrotHomeTabViewController.swift; sourceTree = "<group>"; };
+		B638688928EDC0A3001CEFAE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B638688B28EDC1F3001CEFAE /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		B639D7B328E1ECDF000ED327 /* ButtonBenefitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBenefitViewModel.swift; sourceTree = "<group>"; };
 		B63A1DEC28E6AA13005FABC8 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		B63A1DEE28E6AA23005FABC8 /* FramewrokDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramewrokDetailViewController.swift; sourceTree = "<group>"; };
+		B64970C328EEB34800BD0F98 /* ItemInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfo.swift; sourceTree = "<group>"; };
+		B64970C628EEB38700BD0F98 /* Publisher+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Utils.swift"; sourceTree = "<group>"; };
 		B6512E7728D2036800ECE6D5 /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
 		B6512E7928D2046600ECE6D5 /* InstagramCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCell.swift; sourceTree = "<group>"; };
 		B65794CD289A799300121193 /* UIKitStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +184,42 @@
 			path = Homework7;
 			sourceTree = "<group>";
 		};
+		B638688428EDBF8A001CEFAE /* CarrotHomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				B64970C528EEB37A00BD0F98 /* Utils */,
+				B638688828EDC062001CEFAE /* Model */,
+				B638688728EDC05C001CEFAE /* Network */,
+				B638688528EDC04B001CEFAE /* CarrotHomeTabViewController.swift */,
+			);
+			path = CarrotHomeTab;
+			sourceTree = "<group>";
+		};
+		B638688728EDC05C001CEFAE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B638688928EDC0A3001CEFAE /* NetworkService.swift */,
+				B638688B28EDC1F3001CEFAE /* Resources.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B638688828EDC062001CEFAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B64970C328EEB34800BD0F98 /* ItemInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B64970C528EEB37A00BD0F98 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B64970C628EEB38700BD0F98 /* Publisher+Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		B6512E7428D2025500ECE6D5 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +232,7 @@
 		B65794C4289A799300121193 = {
 			isa = PBXGroup;
 			children = (
+				B638688428EDBF8A001CEFAE /* CarrotHomeTab */,
 				B66DBF4828DFFE6F002B3CA4 /* Toss */,
 				B6512E7428D2025500ECE6D5 /* Instagram */,
 				B65E34A328CC9EF8009EF028 /* KakaoChatList */,
@@ -424,9 +471,11 @@
 				B65794D5289A799300121193 /* ViewController.swift in Sources */,
 				B61520EA28E09F3E00C1CD83 /* MyPointViewModel.swift in Sources */,
 				B6512E7828D2036800ECE6D5 /* InstagramViewController.swift in Sources */,
+				B638688628EDC04B001CEFAE /* CarrotHomeTabViewController.swift in Sources */,
 				B6A8F0D828A8CC0D0065F4BA /* StockModel.swift in Sources */,
 				B61520E828E09D9800C1CD83 /* BenefitListViewModel.swift in Sources */,
 				B6512E7A28D2046600ECE6D5 /* InstagramCell.swift in Sources */,
+				B64970C728EEB38700BD0F98 /* Publisher+Utils.swift in Sources */,
 				B66DBF5428E00207002B3CA4 /* MyPoint.swift in Sources */,
 				B661B64D28B79BDD004EFE56 /* ChatListViewController.swift in Sources */,
 				B61520DC28E0686600C1CD83 /* MyPointViewController.swift in Sources */,
@@ -442,6 +491,7 @@
 				B65FA37B28BB3A1800C9DAB7 /* HeadSpaceViewController.swift in Sources */,
 				B66DBF5728E003C1002B3CA4 /* MyPointCell.swift in Sources */,
 				B61520E628E07D6300C1CD83 /* BenefitGuideView.swift in Sources */,
+				B64970C428EEB34800BD0F98 /* ItemInfo.swift in Sources */,
 				B63564C028B9D885001108BF /* AppleFrameworkCell.swift in Sources */,
 				B66DBF5D28E006F0002B3CA4 /* TodaySectionItem.swift in Sources */,
 				B6C8834728C22AA4003EAC2D /* SpotifyViewCoViewController.swift in Sources */,
@@ -454,9 +504,11 @@
 				B61520E128E078BC00C1CD83 /* ButtonBenefitViewController.swift in Sources */,
 				B66DBF5228E001FF002B3CA4 /* Benefit.swift in Sources */,
 				B66DBF5028E00015002B3CA4 /* BenefitViewController.swift in Sources */,
+				B638688C28EDC1F3001CEFAE /* Resources.swift in Sources */,
 				B661B65128B79CDD004EFE56 /* Chat.swift in Sources */,
 				B613847E28A3C94F0001BABA /* Homework3ViewController.swift in Sources */,
 				B639D7B428E1ECDF000ED327 /* ButtonBenefitViewModel.swift in Sources */,
+				B638688A28EDC0A3001CEFAE /* NetworkService.swift in Sources */,
 				B63A1DEF28E6AA23005FABC8 /* FramewrokDetailViewController.swift in Sources */,
 				B6C8834B28C43379003EAC2D /* BannerInfo.swift in Sources */,
 				B65794D3289A799300121193 /* SceneDelegate.swift in Sources */,
