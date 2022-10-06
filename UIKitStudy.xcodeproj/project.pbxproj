@@ -28,6 +28,11 @@
 		B63A1DEF28E6AA23005FABC8 /* FramewrokDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63A1DEE28E6AA23005FABC8 /* FramewrokDetailViewController.swift */; };
 		B64970C428EEB34800BD0F98 /* ItemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64970C328EEB34800BD0F98 /* ItemInfo.swift */; };
 		B64970C728EEB38700BD0F98 /* Publisher+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64970C628EEB38700BD0F98 /* Publisher+Utils.swift */; };
+		B64970C928EEB4EA00BD0F98 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64970C828EEB4EA00BD0F98 /* HomeViewController.swift */; };
+		B64970CB28EEB4F500BD0F98 /* CarrotHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64970CA28EEB4F500BD0F98 /* CarrotHome.storyboard */; };
+		B64970CD28EEB57A00BD0F98 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64970CC28EEB57A00BD0F98 /* DetailViewController.swift */; };
+		B64970CF28EEB5FA00BD0F98 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64970CE28EEB5FA00BD0F98 /* MainTabBarController.swift */; };
+		B64970D128EEB61600BD0F98 /* NaviagtionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64970D028EEB61600BD0F98 /* NaviagtionViewController.swift */; };
 		B6512E7828D2036800ECE6D5 /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6512E7728D2036800ECE6D5 /* InstagramViewController.swift */; };
 		B6512E7A28D2046600ECE6D5 /* InstagramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6512E7928D2046600ECE6D5 /* InstagramCell.swift */; };
 		B65794D1289A799300121193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65794D0289A799300121193 /* AppDelegate.swift */; };
@@ -53,6 +58,7 @@
 		B66DBF5928E003E7002B3CA4 /* TodayBenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DBF5828E003E7002B3CA4 /* TodayBenefitCell.swift */; };
 		B66DBF5B28E003F5002B3CA4 /* BenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DBF5A28E003F5002B3CA4 /* BenefitCell.swift */; };
 		B66DBF5D28E006F0002B3CA4 /* TodaySectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66DBF5C28E006F0002B3CA4 /* TodaySectionItem.swift */; };
+		B66FE11F28EEB6CE0015C9AC /* CarrotDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66FE11E28EEB6CE0015C9AC /* CarrotDetail.storyboard */; };
 		B680909828A8C925002F694F /* Homework5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680909728A8C925002F694F /* Homework5ViewController.swift */; };
 		B680909A28A8C92D002F694F /* Homework5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B680909928A8C92D002F694F /* Homework5.storyboard */; };
 		B68ED80C28A6028500F1B064 /* Homework4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68ED80B28A6028500F1B064 /* Homework4.storyboard */; };
@@ -90,6 +96,11 @@
 		B63A1DEE28E6AA23005FABC8 /* FramewrokDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramewrokDetailViewController.swift; sourceTree = "<group>"; };
 		B64970C328EEB34800BD0F98 /* ItemInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfo.swift; sourceTree = "<group>"; };
 		B64970C628EEB38700BD0F98 /* Publisher+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Utils.swift"; sourceTree = "<group>"; };
+		B64970C828EEB4EA00BD0F98 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B64970CA28EEB4F500BD0F98 /* CarrotHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarrotHome.storyboard; sourceTree = "<group>"; };
+		B64970CC28EEB57A00BD0F98 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B64970CE28EEB5FA00BD0F98 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B64970D028EEB61600BD0F98 /* NaviagtionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviagtionViewController.swift; sourceTree = "<group>"; };
 		B6512E7728D2036800ECE6D5 /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
 		B6512E7928D2046600ECE6D5 /* InstagramCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCell.swift; sourceTree = "<group>"; };
 		B65794CD289A799300121193 /* UIKitStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +128,7 @@
 		B66DBF5828E003E7002B3CA4 /* TodayBenefitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayBenefitCell.swift; sourceTree = "<group>"; };
 		B66DBF5A28E003F5002B3CA4 /* BenefitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitCell.swift; sourceTree = "<group>"; };
 		B66DBF5C28E006F0002B3CA4 /* TodaySectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaySectionItem.swift; sourceTree = "<group>"; };
+		B66FE11E28EEB6CE0015C9AC /* CarrotDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarrotDetail.storyboard; sourceTree = "<group>"; };
 		B680909728A8C925002F694F /* Homework5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework5ViewController.swift; sourceTree = "<group>"; };
 		B680909928A8C92D002F694F /* Homework5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homework5.storyboard; sourceTree = "<group>"; };
 		B68ED80B28A6028500F1B064 /* Homework4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homework4.storyboard; sourceTree = "<group>"; };
@@ -191,6 +203,12 @@
 				B638688828EDC062001CEFAE /* Model */,
 				B638688728EDC05C001CEFAE /* Network */,
 				B638688528EDC04B001CEFAE /* CarrotHomeTabViewController.swift */,
+				B64970C828EEB4EA00BD0F98 /* HomeViewController.swift */,
+				B64970CC28EEB57A00BD0F98 /* DetailViewController.swift */,
+				B64970CE28EEB5FA00BD0F98 /* MainTabBarController.swift */,
+				B64970D028EEB61600BD0F98 /* NaviagtionViewController.swift */,
+				B64970CA28EEB4F500BD0F98 /* CarrotHome.storyboard */,
+				B66FE11E28EEB6CE0015C9AC /* CarrotDetail.storyboard */,
 			);
 			path = CarrotHomeTab;
 			sourceTree = "<group>";
@@ -447,6 +465,8 @@
 				B661B64F28B79BF5004EFE56 /* Homework6.storyboard in Resources */,
 				B680909A28A8C92D002F694F /* Homework5.storyboard in Resources */,
 				B65794DD289A799300121193 /* LaunchScreen.storyboard in Resources */,
+				B66FE11F28EEB6CE0015C9AC /* CarrotDetail.storyboard in Resources */,
+				B64970CB28EEB4F500BD0F98 /* CarrotHome.storyboard in Resources */,
 				B65794DA289A799300121193 /* Assets.xcassets in Resources */,
 				B63A1DED28E6AA13005FABC8 /* Detail.storyboard in Resources */,
 				B66DBF4E28DFFFF1002B3CA4 /* TossBenefitStoryBoard.storyboard in Resources */,
@@ -489,9 +509,11 @@
 				B65FA37D28BB3A2000C9DAB7 /* Focus.swift in Sources */,
 				B68ED80E28A6029300F1B064 /* HomeWork4ViewController.swift in Sources */,
 				B65FA37B28BB3A1800C9DAB7 /* HeadSpaceViewController.swift in Sources */,
+				B64970D128EEB61600BD0F98 /* NaviagtionViewController.swift in Sources */,
 				B66DBF5728E003C1002B3CA4 /* MyPointCell.swift in Sources */,
 				B61520E628E07D6300C1CD83 /* BenefitGuideView.swift in Sources */,
 				B64970C428EEB34800BD0F98 /* ItemInfo.swift in Sources */,
+				B64970CD28EEB57A00BD0F98 /* DetailViewController.swift in Sources */,
 				B63564C028B9D885001108BF /* AppleFrameworkCell.swift in Sources */,
 				B66DBF5D28E006F0002B3CA4 /* TodaySectionItem.swift in Sources */,
 				B6C8834728C22AA4003EAC2D /* SpotifyViewCoViewController.swift in Sources */,
@@ -505,6 +527,7 @@
 				B66DBF5228E001FF002B3CA4 /* Benefit.swift in Sources */,
 				B66DBF5028E00015002B3CA4 /* BenefitViewController.swift in Sources */,
 				B638688C28EDC1F3001CEFAE /* Resources.swift in Sources */,
+				B64970C928EEB4EA00BD0F98 /* HomeViewController.swift in Sources */,
 				B661B65128B79CDD004EFE56 /* Chat.swift in Sources */,
 				B613847E28A3C94F0001BABA /* Homework3ViewController.swift in Sources */,
 				B639D7B428E1ECDF000ED327 /* ButtonBenefitViewModel.swift in Sources */,
@@ -513,6 +536,7 @@
 				B6C8834B28C43379003EAC2D /* BannerInfo.swift in Sources */,
 				B65794D3289A799300121193 /* SceneDelegate.swift in Sources */,
 				B65FA37F28BB3AC600C9DAB7 /* HeadSpaceCollectionViewCell.swift in Sources */,
+				B64970CF28EEB5FA00BD0F98 /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
